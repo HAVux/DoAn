@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        input[type=submit] {
+            padding: 20px 40px;
+            font-size: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="/supporter_config">
+        <input type="submit" value="Support">
+    </form>
+    <form method="get" action="/admin_config">
+        <input type="submit" value="Admin">
+    </form>
+    <form method="get" action="/product_config">
+        <input type="submit" value="products">
+    </form>
+</body>
+</html>

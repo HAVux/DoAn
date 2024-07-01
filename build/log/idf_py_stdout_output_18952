@@ -1,0 +1,126 @@
+[1/11] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/spiffs/spiffsgen.py 0x210000 D:/htn0d/esp-idf-st7789-master/font D:/htn0d/esp-idf-st7789-master/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\bootloader\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/htn0d/esp-idf-st7789-master/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[3/9] Building C object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi.c.obj
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_post_login_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:184:15: warning: unused variable 'err' [-Wunused-variable]
+  184 |     esp_err_t err = esp_http_client_perform(client);
+      |               ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:175:9: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  175 |     int ret = mbedtls_base64_encode(NULL, 0, &olen, (const unsigned char *)client_credentials, strlen(client_credentials));
+      |         ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_create_invoice_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:210:15: warning: unused variable 'err' [-Wunused-variable]
+  210 |     esp_err_t err = esp_http_client_perform(client);
+      |               ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_invoice_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:235:15: warning: unused variable 'err' [-Wunused-variable]
+  235 |     esp_err_t err = esp_http_client_perform(client);
+      |               ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_create_qr_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:261:15: warning: unused variable 'err' [-Wunused-variable]
+  261 |     esp_err_t err = esp_http_client_perform(client);
+      |               ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_check_invoice_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:285:15: warning: unused variable 'err' [-Wunused-variable]
+  285 |     esp_err_t err = esp_http_client_perform(client);
+      |               ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: At top level:
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:556:13: warning: 'wifi_event_handler' defined but not used [-Wunused-function]
+  556 | static void wifi_event_handler(void* arg, esp_event_base_t event_base,int32_t event_id, void* event_data)
+      |             ^~~~~~~~~~~~~~~~~~
+[4/9] Linking C static library esp-idf\wifi\libwifi.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable st7789.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/htn0d/esp-idf-st7789-master/build/st7789.bin
+[8/9] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/htn0d/esp-idf-st7789-master/build/partition_table/partition-table.bin D:/htn0d/esp-idf-st7789-master/build/st7789.bin"
+st7789.bin binary size 0x1038a0 bytes. Smallest app partition is 0x110000 bytes. 0xc760 bytes (5%) free.
+Warning: The smallest app partition is nearly full (5% free space left)!
+[8/9] cmd.exe /C "cd /D C:\Users\xiaoy\esp\v5.2\esp-idf\components\esptool_py && C:\Users\xiaoy\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/xiaoy/esp/v5.2/esp-idf -D SERIAL_TOOL=C:/Users/xiaoy/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=-esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 st7789.bin 0x8000 partition_table/partition-table.bin 0x120000 storage.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:d7:eb:18:3f:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00113fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00120000 to 0x0032ffff...
+Compressed 26704 bytes to 16348...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16348 compressed) at 0x00001000 in 0.8 seconds (effective 255.5 kbit/s)...
+Hash of data verified.
+Compressed 1063072 bytes to 669492...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e338... (4 %)
+Writing at 0x00028d60... (7 %)
+Writing at 0x0002d962... (9 %)
+Writing at 0x00032ce2... (12 %)
+Writing at 0x00038e66... (14 %)
+Writing at 0x0003e035... (17 %)
+Writing at 0x00044084... (19 %)
+Writing at 0x00050f04... (21 %)
+Writing at 0x000568a1... (24 %)
+Writing at 0x0005c490... (26 %)
+Writing at 0x0006224e... (29 %)
+Writing at 0x00067ff0... (31 %)
+Writing at 0x0006dbd8... (34 %)
+Writing at 0x000737c5... (36 %)
+Writing at 0x0007965e... (39 %)
+Writing at 0x0007fc03... (41 %)
+Writing at 0x00085868... (43 %)
+Writing at 0x0008b515... (46 %)
+Writing at 0x00090810... (48 %)
+Writing at 0x00095be1... (51 %)
+Writing at 0x0009b13a... (53 %)
+Writing at 0x000a04bc... (56 %)
+Writing at 0x000a5b1a... (58 %)
+Writing at 0x000ab40b... (60 %)
+Writing at 0x000b13b0... (63 %)
+Writing at 0x000b6e6a... (65 %)
+Writing at 0x000bcb22... (68 %)
+Writing at 0x000c274f... (70 %)
+Writing at 0x000c81d7... (73 %)
+Writing at 0x000cdb8c... (75 %)
+Writing at 0x000d38de... (78 %)
+Writing at 0x000da0f8... (80 %)
+Writing at 0x000df9a3... (82 %)
+Writing at 0x000e56ea... (85 %)
+Writing at 0x000efe16... (87 %)
+Writing at 0x000f710e... (90 %)
+Writing at 0x000fd543... (92 %)
+Writing at 0x00102f38... (95 %)
+Writing at 0x00109133... (97 %)
+Writing at 0x0010ec04... (100 %)
+Wrote 1063072 bytes (669492 compressed) at 0x00010000 in 16.2 seconds (effective 526.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 287.6 kbit/s)...
+Hash of data verified.
+Compressed 2162688 bytes to 74841...
+Writing at 0x00120000... (20 %)
+Writing at 0x001259fa... (40 %)
+Writing at 0x00129ddf... (60 %)
+Writing at 0x0012e2ac... (80 %)
+Writing at 0x00132722... (100 %)
+Wrote 2162688 bytes (74841 compressed) at 0x00120000 in 12.8 seconds (effective 1355.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+-before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/htn0d/esp-idf-st7789-master/build -P C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"

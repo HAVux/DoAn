@@ -1,0 +1,29 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008199e: panic_abort at C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_system/panic.c:472
+0x4008b051: esp_system_abort at C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40093bc9: __assert_func at C:/Users/xiaoy/esp/v5.2/esp-idf/components/newlib/assert.c:81
+0x4008b7a6: xQueueGiveFromISR at C:/Users/xiaoy/esp/v5.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1358 (discriminator 1)
+0x400832c5: button_isr_handler at D:/htn0d/esp-idf-st7789-master/main/main.c:303
+0x40083b75: gpio_isr_loop at C:/Users/xiaoy/esp/v5.2/esp-idf/components/driver/gpio/gpio.c:470
+0x40083c06: gpio_intr_service at C:/Users/xiaoy/esp/v5.2/esp-idf/components/driver/gpio/gpio.c:492
+0x40083641: _xt_lowint1 at C:/Users/xiaoy/esp/v5.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40089143: xt_utils_wait_for_intr at C:/Users/xiaoy/esp/v5.2/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_hw_support/cpu.c:132
+0x400d3d3b: esp_vApplicationIdleHook at C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4008cc65: prvIdleTask at C:/Users/xiaoy/esp/v5.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4008bb9d: vPortTaskWrapper at C:/Users/xiaoy/esp/v5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

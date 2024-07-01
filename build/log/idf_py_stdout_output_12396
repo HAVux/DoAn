@@ -1,0 +1,146 @@
+-- Component directory D:/htn0d/esp-idf-st7789-master/components/attendance_device does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] espressif/esp_jpeg (1.0.5~2)
+[2/2] idf (5.2.0)
+-- Project sdkconfig file D:/htn0d/esp-idf-st7789-master/sdkconfig
+Loading defaults file D:/htn0d/esp-idf-st7789-master/sdkconfig.defaults...
+D:/htn0d/esp-idf-st7789-master/sdkconfig.defaults:16 CONFIG_ESP32_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240
+D:/htn0d/esp-idf-st7789-master/sdkconfig.defaults:17 CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ
+-- Compiler supported targets: xtensa-esp-elf
+-- App "st7789" version: 1
+-- Adding linker script D:/htn0d/esp-idf-st7789-master/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: HD44780 app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__esp_jpeg esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs st7789 tcp_transport ulp unity usb vfs wear_levelling wifi wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/htn0d/esp-idf-st7789-master/components/HD44780 C:/Users/xiaoy/esp/v5.2/esp-idf/components/app_trace C:/Users/xiaoy/esp/v5.2/esp-idf/components/app_update C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader_support C:/Users/xiaoy/esp/v5.2/esp-idf/components/bt C:/Users/xiaoy/esp/v5.2/esp-idf/components/cmock C:/Users/xiaoy/esp/v5.2/esp-idf/components/console C:/Users/xiaoy/esp/v5.2/esp-idf/components/cxx C:/Users/xiaoy/esp/v5.2/esp-idf/components/driver C:/Users/xiaoy/esp/v5.2/esp-idf/components/efuse C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp-tls C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_adc C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_app_format C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_bootloader_format C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_coex C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_common C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_eth C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_event C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_gdbstub C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_hid C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_http_client C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_http_server C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_https_ota C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_https_server C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_hw_support C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_lcd C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_local_ctrl C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_mm C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_netif C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_netif_stack C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_partition C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_phy C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_pm C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_psram C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_ringbuf C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_system C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_timer C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_wifi C:/Users/xiaoy/esp/v5.2/esp-idf/components/espcoredump D:/htn0d/esp-idf-st7789-master/managed_components/espressif__esp_jpeg C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py C:/Users/xiaoy/esp/v5.2/esp-idf/components/fatfs C:/Users/xiaoy/esp/v5.2/esp-idf/components/freertos C:/Users/xiaoy/esp/v5.2/esp-idf/components/hal C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap C:/Users/xiaoy/esp/v5.2/esp-idf/components/http_parser C:/Users/xiaoy/esp/v5.2/esp-idf/components/idf_test C:/Users/xiaoy/esp/v5.2/esp-idf/components/ieee802154 C:/Users/xiaoy/esp/v5.2/esp-idf/components/json C:/Users/xiaoy/esp/v5.2/esp-idf/components/log C:/Users/xiaoy/esp/v5.2/esp-idf/components/lwip D:/htn0d/esp-idf-st7789-master/main C:/Users/xiaoy/esp/v5.2/esp-idf/components/mbedtls C:/Users/xiaoy/esp/v5.2/esp-idf/components/mqtt C:/Users/xiaoy/esp/v5.2/esp-idf/components/newlib C:/Users/xiaoy/esp/v5.2/esp-idf/components/nvs_flash C:/Users/xiaoy/esp/v5.2/esp-idf/components/nvs_sec_provider C:/Users/xiaoy/esp/v5.2/esp-idf/components/openthread C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table C:/Users/xiaoy/esp/v5.2/esp-idf/components/perfmon C:/Users/xiaoy/esp/v5.2/esp-idf/components/protobuf-c C:/Users/xiaoy/esp/v5.2/esp-idf/components/protocomm C:/Users/xiaoy/esp/v5.2/esp-idf/components/pthread C:/Users/xiaoy/esp/v5.2/esp-idf/components/sdmmc C:/Users/xiaoy/esp/v5.2/esp-idf/components/soc C:/Users/xiaoy/esp/v5.2/esp-idf/components/spi_flash C:/Users/xiaoy/esp/v5.2/esp-idf/components/spiffs D:/htn0d/esp-idf-st7789-master/components/st7789 C:/Users/xiaoy/esp/v5.2/esp-idf/components/tcp_transport C:/Users/xiaoy/esp/v5.2/esp-idf/components/ulp C:/Users/xiaoy/esp/v5.2/esp-idf/components/unity C:/Users/xiaoy/esp/v5.2/esp-idf/components/usb C:/Users/xiaoy/esp/v5.2/esp-idf/components/vfs C:/Users/xiaoy/esp/v5.2/esp-idf/components/wear_levelling D:/htn0d/esp-idf-st7789-master/components/wifi C:/Users/xiaoy/esp/v5.2/esp-idf/components/wifi_provisioning C:/Users/xiaoy/esp/v5.2/esp-idf/components/wpa_supplicant C:/Users/xiaoy/esp/v5.2/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/htn0d/esp-idf-st7789-master/build
+[0/1] Re-running CMake...
+[1/11] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/spiffs/spiffsgen.py 0xf0000 D:/htn0d/esp-idf-st7789-master/font D:/htn0d/esp-idf-st7789-master/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/11] Building C object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi.c.obj
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_post_login_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:104:15: warning: unused variable 'err' [-Wunused-variable]
+  104 |     esp_err_t err = esp_http_client_perform(client);
+      |               ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: At top level:
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:353:13: warning: 'wifi_event_handler' defined but not used [-Wunused-function]
+  353 | static void wifi_event_handler(void* arg, esp_event_base_t event_base,int32_t event_id, void* event_data)
+      |             ^~~~~~~~~~~~~~~~~~
+[3/11] Linking C static library esp-idf\wifi\libwifi.a
+[4/11] Performing build step for 'bootloader'
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/htn0d/esp-idf-st7789-master/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader_support C:/Users/xiaoy/esp/v5.2/esp-idf/components/efuse C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_app_format C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_bootloader_format C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_common C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_hw_support C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_rom C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_system C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py C:/Users/xiaoy/esp/v5.2/esp-idf/components/freertos C:/Users/xiaoy/esp/v5.2/esp-idf/components/hal C:/Users/xiaoy/esp/v5.2/esp-idf/components/log C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader/subproject/main C:/Users/xiaoy/esp/v5.2/esp-idf/components/bootloader/subproject/components/micro-ecc C:/Users/xiaoy/esp/v5.2/esp-idf/components/newlib C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table C:/Users/xiaoy/esp/v5.2/esp-idf/components/soc C:/Users/xiaoy/esp/v5.2/esp-idf/components/spi_flash C:/Users/xiaoy/esp/v5.2/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/htn0d/esp-idf-st7789-master/build/bootloader
+[0/1] Re-running CMake...
+[1/1] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\bootloader\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/htn0d/esp-idf-st7789-master/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable st7789.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/htn0d/esp-idf-st7789-master/build/st7789.bin
+[8/9] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/htn0d/esp-idf-st7789-master/build/partition_table/partition-table.bin D:/htn0d/esp-idf-st7789-master/build/st7789.bin"
+st7789.bin binary size 0xdb810 bytes. Smallest app partition is 0x100000 bytes. 0x247f0 bytes (14%) free.
+[8/9] cmd.exe /C "cd /D C:\Users\xiaoy\esp\v5.2\esp-idf\components\esptool_py && C:\Users\xiaoy\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/xiaoy/esp/v5.2/esp-idf -D SERIAL_TOOL=C:/Users/xiaoy/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/htn0d/esp-idf-st7789-master/build -P C:/Users/xesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 st7789.bin 0x8000 partition_table/partition-table.bin 0x110000 storage.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:d7:eb:18:3f:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ebfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x001fffff...
+Compressed 26704 bytes to 16348...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16348 compressed) at 0x00001000 in 0.9 seconds (effective 250.4 kbit/s)...
+Hash of data verified.
+Compressed 899088 bytes to 558970...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d68a... (5 %)
+Writing at 0x00027d3e... (8 %)
+Writing at 0x0002dfdf... (11 %)
+Writing at 0x000347fc... (14 %)
+Writing at 0x0003f69d... (17 %)
+Writing at 0x00044fd4... (20 %)
+Writing at 0x0004ae56... (22 %)
+Writing at 0x00050a28... (25 %)
+Writing at 0x00056958... (28 %)
+Writing at 0x0005c532... (31 %)
+Writing at 0x00062534... (34 %)
+Writing at 0x00067c93... (37 %)
+Writing at 0x0006cee1... (40 %)
+Writing at 0x00072460... (42 %)
+Writing at 0x000776da... (45 %)
+Writing at 0x0007cdc1... (48 %)
+Writing at 0x000824d0... (51 %)
+Writing at 0x00087f10... (54 %)
+Writing at 0x0008da98... (57 %)
+Writing at 0x00093277... (60 %)
+Writing at 0x00098ece... (62 %)
+Writing at 0x0009ec3f... (65 %)
+Writing at 0x000a44ba... (68 %)
+Writing at 0x000aa1ad... (71 %)
+Writing at 0x000b0846... (74 %)
+Writing at 0x000b6c7b... (77 %)
+Writing at 0x000bc5c1... (80 %)
+Writing at 0x000c221b... (82 %)
+Writing at 0x000ccae8... (85 %)
+Writing at 0x000d37fa... (88 %)
+Writing at 0x000d9811... (91 %)
+Writing at 0x000df3e8... (94 %)
+Writing at 0x000e562a... (97 %)
+Writing at 0x000eaa71... (100 %)
+Wrote 899088 bytes (558970 compressed) at 0x00010000 in 13.0 seconds (effective 554.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.1 seconds (effective 316.8 kbit/s)...
+Hash of data verified.
+Compressed 983040 bytes to 72566...
+Writing at 0x00110000... (20 %)
+Writing at 0x00115846... (40 %)
+Writing at 0x00119c2a... (60 %)
+Writing at 0x0011dffd... (80 %)
+Writing at 0x0012256a... (100 %)
+Wrote 983040 bytes (72566 compressed) at 0x00110000 in 6.3 seconds (effective 1255.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+iaoy/esp/v5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"

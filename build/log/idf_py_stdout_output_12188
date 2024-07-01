@@ -1,0 +1,572 @@
+ets Jul 29 2019 12:21:46
+
+rst:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 00:29:34[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00110000 000f0000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28918h (166168) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038940 vaddr=3ffb0000 size=03d64h ( 15716) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c6ac vaddr=40080000 size=0396ch ( 14700) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=96e40h (618048) map[0m
+[0;32mI (393) esp_image: segment 4: paddr=000d6e68 vaddr=4008396c size=14984h ( 84356) load[0m
+[0;32mI (438) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (438) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (459) cpu_start: Application information:[0m
+[0;32mI (462) cpu_start: Project name:     st7789[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (471) cpu_start: Compile time:     Jul  1 2024 00:40:48[0m
+[0;32mI (477) cpu_start: ELF file SHA256:  be4032d9b...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFB9240 len 00026DC0 (155 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 400982F0 len 00007D10 (31 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (562) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (663) DEVICE: Partition size: total: 896321, used: 6777[0m
+[0;32mI (843) DEVICE: SSID: eunionoffice[0m
+[0;32mI (843) DEVICE: Password: !!!taolao123[0m
+[0;32mI (843) DEVICE: DeviceId: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh[0m
+[0;32mI (843) DEVICE: ServiceCode: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO[0m
+[0;32mI (853) DEVICE: BusinessName: YNGU20[0m
+[0;32mI (863) DEVICE: Number of Products: 5[0m
+[0;32mI (863) DEVICE: Admin Password: 1234231[0m
+[0;32mI (873) DEVICE: Supporter Password: champenaivematron[0m
+I (893) wifi:wifi driver task: 3ffc20c8, prio:23, stack:6656, core=0
+I (913) wifi:wifi firmware version: cc1dd81
+I (913) wifi:wifi certification version: v7.0
+I (913) wifi:config NVS flash: enabled
+I (913) wifi:config nano formating: disabled
+I (913) wifi:Init data frame dynamic rx buffer num: 32
+I (923) wifi:Init static rx mgmt buffer num: 5
+I (923) wifi:Init management short buffer num: 32
+I (933) wifi:Init dynamic tx buffer num: 32
+I (933) wifi:Init static rx buffer size: 1600
+I (933) wifi:Init static rx buffer num: 10
+I (943) wifi:Init dynamic rx buffer num: 32
+[0;32mI (943) wifi_init: rx ba win: 6[0m
+[0;32mI (943) wifi_init: tcpip mbox: 32[0m
+[0;32mI (953) wifi_init: udp mbox: 6[0m
+[0;32mI (953) wifi_init: tcp mbox: 6[0m
+[0;32mI (963) wifi_init: tcp tx win: 5760[0m
+[0;32mI (963) wifi_init: tcp rx win: 5760[0m
+[0;32mI (963) wifi_init: tcp mss: 1440[0m
+[0;32mI (973) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (973) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (983) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1053) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (1053) wifi:enable tsf
+I (1063) wifi:Total power save buffer number: 16
+I (1063) wifi:Init max length of beacon: 752/752
+I (1063) wifi:Init max length of beacon: 752/752
+[0;32mI (1073) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1073) wifi:ap channel adjust o:1,1 n:7,2
+I (1083) wifi:new:<7,0>, old:<1,1>, ap:<7,2>, sta:<7,0>, prof:1
+I (1083) wifi:state: init -> auth (b0)
+I (1093) wifi:state: auth -> assoc (0)
+I (1113) wifi:state: assoc -> run (10)
+I (1223) wifi:connected with eunionoffice, aid = 2, channel 7, BW20, bssid = d4:9a:a0:be:2f:90
+I (1223) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (1233) wifi:pm start, type: 1
+
+I (1233) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1283) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2243) esp_netif_handlers: sta ip: 192.168.1.5, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2243) DEVICE: got ip:192.168.1.5[0m
+[0;32mI (2243) DEVICE: connected to ap SSID:eunionoffice password:!!!taolao123[0m
+[0;32mI (2253) DEVICE: Connected to WiFi network[0m
+[0;32mI (2253) DEVICE: Hosting at 192.168.4.1 now![0m
+[0;32mI (2263) ST7789: GPIO_CS=5[0m
+[0;32mI (2263) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2273) ST7789: GPIO_DC=19[0m
+[0;32mI (2273) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2283) ST7789: GPIO_RESET=17[0m
+[0;32mI (2293) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2293) main_task: Returned from app_main()[0m
+[0;32mI (2593) ST7789: GPIO_BL=-1[0m
+[0;32mI (2593) ST7789: GPIO_MOSI=23[0m
+[0;32mI (2593) ST7789: GPIO_SCLK=18[0m
+[0;32mI (6533) PNGTest: elapsed time[ms]:3240[0m
+I (7023) wifi:<ba-add>idx:0 (ifx:0, d4:9a:a0:be:2f:90), tid:0, ssn:21, winSize:64
+[0;32mI (7043) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==!!!!!!![0m
+[0;32mI (7043) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDIzMQ==[0m
+[0;32mI (7043) DEVICE: String compare: 0[0m
+[0;32mI (7053) DEVICE: Generated HTML: <body><h1>ESP32 Web Server</h1><h2>Device Config</h2><div style="display: flex; justify-content: space-between;"><div style="flex: 1; margin-left: 10px;"><form method="POST" action="/admin_config"><label for="ssid">Wifi ID:</label><br><input type="text" id="ssid" name="ssid" value="eunionoffice"><br><label for="password">Wifi Password:</label><br><input type="password" id="password" name="password" value="!!!taolao123"><br><label for="Client_id">Client Id:</label><br><input type="text" id="Client_id" name="Client_id" value="AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh"><br><lable for="Client_secret">Client Secret:</label><br><input type="text" id="Client_secret" name="Client_secret" value="EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO"><br><label for="Business_name">Business Name:</label><br><input type="text" id="Business_name" name="Business_name" value="YNGU20"><br><label for="number_of_products">Number Of Products:</label><br><input type="text" id="number_of_products" name="number_of_products" value="5"><br><label for="adminPass">Admin Password:</label><br><input type="password" id="adminPass" name="adminPass" value="1234231"><br><label for="supporterPass">Supporter Password:</label><br><input type="password" id="supporterPass" name="supporterPass" value="champenaivematron"><br><input type="submit" value="Submit"></form><form method="post" action="/logout"><input type="submit" value="Get Back"></form></div><div style="flex: 1; margin-right: 10px;"><h3>Current Config:</h3><p id="current_ssid">SSID: eunionoffice</p><p id="current_password">Password: !!!taolao123</p><p id="current_ClientId">Client Id: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh</p><p id="current_ClientSecret">Client Secret: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO</p><p id="current_BusinessName">Business Name: YNGU20</p><p id="current_NumberOfProducts">Number Of Products: 5</p><p id="current_adminPass">Admin Password: 1234231</p><p id="current_supporterPass">Supporter Password: champenaivematron</p></div></div></body></html>[0m
+[0;32mI (9173) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==[0m
+[0;32mI (9173) DEVICE: Received ssid=eunionoffice&password=%21%21%21taolao123&Client_id=AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh&Client_secret=EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO&Business_name=YNGU20&number_of_products=5&adminPass=1234231&supporterPass=champenaivematron[0m
+I (10403) wifi:state: run -> init (0)
+I (10403) wifi:pm stop, total sleep time: 7150369 us / 9169175 us
+
+I (10403) wifi:<ba-del>idx:0, tid:0
+I (10403) wifi:new:<7,0>, old:<7,0>, ap:<7,2>, sta:<7,0>, prof:1
+E (10403) wifi:NAN WiFi stop
+[0;32mI (10413) DEVICE: retry to connect to the AP[0m
+[0;32mI (10413) DEVICE: connect to the AP fail[0m
+I (10463) wifi:flush txq
+I (10463) wifi:stop sw txq
+I (10463) wifi:lmac stop hw txq
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 00:29:34[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00110000 000f0000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28918h (166168) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038940 vaddr=3ffb0000 size=03d64h ( 15716) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c6ac vaddr=40080000 size=0396ch ( 14700) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=96e40h (618048) map[0m
+[0;32mI (393) esp_image: segment 4: paddr=000d6e68 vaddr=4008396c size=14984h ( 84356) load[0m
+[0;32mI (438) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (438) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (458) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (458) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     st7789[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (471) cpu_start: Compile time:     Jul  1 2024 00:40:48[0m
+[0;32mI (477) cpu_start: ELF file SHA256:  be4032d9b...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB9240 len 00026DC0 (155 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400982F0 len 00007D10 (31 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (562) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (663) DEVICE: Partition size: total: 896321, used: 9036[0m
+[0;32mI (733) DEVICE: SSID: eunionoffice[0m
+[0;32mI (733) DEVICE: Password: !!!taolao123[0m
+[0;32mI (733) DEVICE: DeviceId: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh[0m
+[0;32mI (743) DEVICE: ServiceCode: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO[0m
+[0;32mI (753) DEVICE: BusinessName: YNGU20[0m
+[0;32mI (753) DEVICE: Number of Products: 0[0m
+[0;32mI (763) DEVICE: Admin Password: 1234231[0m
+[0;32mI (763) DEVICE: Supporter Password: champenaivematron[0m
+I (783) wifi:wifi driver task: 3ffc20cc, prio:23, stack:6656, core=0
+I (803) wifi:wifi firmware version: cc1dd81
+I (803) wifi:wifi certification version: v7.0
+I (803) wifi:config NVS flash: enabled
+I (803) wifi:config nano formating: disabled
+I (803) wifi:Init data frame dynamic rx buffer num: 32
+I (813) wifi:Init static rx mgmt buffer num: 5
+I (813) wifi:Init management short buffer num: 32
+I (823) wifi:Init dynamic tx buffer num: 32
+I (823) wifi:Init static rx buffer size: 1600
+I (823) wifi:Init static rx buffer num: 10
+I (833) wifi:Init dynamic rx buffer num: 32
+[0;32mI (833) wifi_init: rx ba win: 6[0m
+[0;32mI (833) wifi_init: tcpip mbox: 32[0m
+[0;32mI (843) wifi_init: udp mbox: 6[0m
+[0;32mI (843) wifi_init: tcp mbox: 6[0m
+[0;32mI (853) wifi_init: tcp tx win: 5760[0m
+[0;32mI (853) wifi_init: tcp rx win: 5760[0m
+[0;32mI (853) wifi_init: tcp mss: 1440[0m
+[0;32mI (863) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (863) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (873) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (943) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (943) wifi:enable tsf
+I (953) wifi:Total power save buffer number: 16
+I (953) wifi:Init max length of beacon: 752/752
+I (953) wifi:Init max length of beacon: 752/752
+[0;32mI (963) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (973) wifi:ap channel adjust o:1,1 n:7,2
+I (973) wifi:new:<7,0>, old:<1,1>, ap:<7,2>, sta:<7,0>, prof:1
+I (973) wifi:state: init -> auth (b0)
+I (1003) wifi:state: auth -> assoc (0)
+I (1013) wifi:state: assoc -> run (10)
+I (1123) wifi:connected with eunionoffice, aid = 2, channel 7, BW20, bssid = d4:9a:a0:be:2f:90
+I (1123) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (1123) wifi:pm start, type: 1
+
+I (1123) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1153) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2133) esp_netif_handlers: sta ip: 192.168.1.5, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2133) DEVICE: got ip:192.168.1.5[0m
+[0;32mI (2133) DEVICE: connected to ap SSID:eunionoffice password:!!!taolao123[0m
+[0;32mI (2143) DEVICE: Connected to WiFi network[0m
+[0;32mI (2143) DEVICE: Hosting at 192.168.4.1 now![0m
+[0;32mI (2153) ST7789: GPIO_CS=5[0m
+[0;32mI (2153) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2163) ST7789: GPIO_DC=19[0m
+[0;32mI (2163) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2173) ST7789: GPIO_RESET=17[0m
+[0;32mI (2183) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2183) main_task: Returned from app_main()[0m
+[0;32mI (2483) ST7789: GPIO_BL=-1[0m
+[0;32mI (2483) ST7789: GPIO_MOSI=23[0m
+[0;32mI (2483) ST7789: GPIO_SCLK=18[0m
+[0;32mI (6453) PNGTest: elapsed time[ms]:3270[0m
+I (8123) wifi:<ba-add>idx:0 (ifx:0, d4:9a:a0:be:2f:90), tid:0, ssn:4, winSize:64
+[0;32mI (8143) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==!!!!!!![0m
+[0;32mI (8143) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDIzMQ==[0m
+[0;32mI (8143) DEVICE: String compare: 0[0m
+[0;32mI (8153) DEVICE: Generated HTML: <body><h1>ESP32 Web Server</h1><h2>Device Config</h2><div style="display: flex; justify-content: space-between;"><div style="flex: 1; margin-left: 10px;"><form method="POST" action="/admin_config"><label for="ssid">Wifi ID:</label><br><input type="text" id="ssid" name="ssid" value="eunionoffice"><br><label for="password">Wifi Password:</label><br><input type="password" id="password" name="password" value="!!!taolao123"><br><label for="Client_id">Client Id:</label><br><input type="text" id="Client_id" name="Client_id" value="AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh"><br><lable for="Client_secret">Client Secret:</label><br><input type="text" id="Client_secret" name="Client_secret" value="EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO"><br><label for="Business_name">Business Name:</label><br><input type="text" id="Business_name" name="Business_name" value="YNGU20"><br><label for="number_of_products">Number Of Products:</label><br><input type="text" id="number_of_products" name="number_of_products" value="0"><br><label for="adminPass">Admin Password:</label><br><input type="password" id="adminPass" name="adminPass" value="1234231"><br><label for="supporterPass">Supporter Password:</label><br><input type="password" id="supporterPass" name="supporterPass" value="champenaivematron"><br><input type="submit" value="Submit"></form><form method="post" action="/logout"><input type="submit" value="Get Back"></form></div><div style="flex: 1; margin-right: 10px;"><h3>Current Config:</h3><p id="current_ssid">SSID: eunionoffice</p><p id="current_password">Password: !!!taolao123</p><p id="current_ClientId">Client Id: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh</p><p id="current_ClientSecret">Client Secret: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO</p><p id="current_BusinessName">Business Name: YNGU20</p><p id="current_NumberOfProducts">Number Of Products: 0</p><p id="current_adminPass">Admin Password: 1234231</p><p id="current_supporterPass">Supporter Password: champenaivematron</p></div></div></body></html>[0m
+[0;32mI (10453) DEVICE: Base64 decoded image size: 816[0m
+[0;32mI (10453) DEVICE: Base64 decoded image: �PNG
+
+[0m
+[0;32mI (13033) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==[0m
+[0;32mI (13043) DEVICE: Received ssid=eunionoffice&password=%21%21%21taolao123&Client_id=AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh&Client_secret=EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO&Business_name=YNGU20&number_of_products=5&adminPass=1234231&supporterPass=champenaivematron[0m
+[0;32mI (13713) PNGTest: elapsed time[ms]:3240[0m
+I (14173) wifi:state: run -> init (0)
+I (14173) wifi:pm stop, total sleep time: 11089140 us / 13041975 us
+
+I (14173) wifi:<ba-del>idx:0, tid:0
+I (14173) wifi:new:<7,0>, old:<7,0>, ap:<7,2>, sta:<7,0>, prof:1
+E (14173) wifi:NAN WiFi stop
+[0;32mI (14183) DEVICE: retry to connect to the AP[0m
+[0;32mI (14183) DEVICE: connect to the AP fail[0m
+I (14233) wifi:flush txq
+I (14233) wifi:stop sw txq
+I (14233) wifi:lmac stop hw txq
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 00:29:34[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00110000 000f0000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28918h (166168) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038940 vaddr=3ffb0000 size=03d64h ( 15716) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c6ac vaddr=40080000 size=0396ch ( 14700) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=96e40h (618048) map[0m
+[0;32mI (393) esp_image: segment 4: paddr=000d6e68 vaddr=4008396c size=14984h ( 84356) load[0m
+[0;32mI (438) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (438) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (458) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (458) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     st7789[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (471) cpu_start: Compile time:     Jul  1 2024 00:40:48[0m
+[0;32mI (477) cpu_start: ELF file SHA256:  be4032d9b...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB9240 len 00026DC0 (155 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400982F0 len 00007D10 (31 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (562) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (663) DEVICE: Partition size: total: 896321, used: 9036[0m
+[0;32mI (733) DEVICE: SSID: eunionoffice[0m
+[0;32mI (733) DEVICE: Password: !!!taolao123[0m
+[0;32mI (733) DEVICE: DeviceId: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh[0m
+[0;32mI (743) DEVICE: ServiceCode: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO[0m
+[0;32mI (753) DEVICE: BusinessName: YNGU20[0m
+[0;32mI (753) DEVICE: Number of Products: 0[0m
+[0;32mI (763) DEVICE: Admin Password: 1234231[0m
+[0;32mI (763) DEVICE: Supporter Password: champenaivematron[0m
+I (783) wifi:wifi driver task: 3ffc20cc, prio:23, stack:6656, core=0
+I (803) wifi:wifi firmware version: cc1dd81
+I (803) wifi:wifi certification version: v7.0
+I (803) wifi:config NVS flash: enabled
+I (803) wifi:config nano formating: disabled
+I (803) wifi:Init data frame dynamic rx buffer num: 32
+I (813) wifi:Init static rx mgmt buffer num: 5
+I (813) wifi:Init management short buffer num: 32
+I (823) wifi:Init dynamic tx buffer num: 32
+I (823) wifi:Init static rx buffer size: 1600
+I (823) wifi:Init static rx buffer num: 10
+I (833) wifi:Init dynamic rx buffer num: 32
+[0;32mI (833) wifi_init: rx ba win: 6[0m
+[0;32mI (833) wifi_init: tcpip mbox: 32[0m
+[0;32mI (843) wifi_init: udp mbox: 6[0m
+[0;32mI (843) wifi_init: tcp mbox: 6[0m
+[0;32mI (853) wifi_init: tcp tx win: 5760[0m
+[0;32mI (853) wifi_init: tcp rx win: 5760[0m
+[0;32mI (853) wifi_init: tcp mss: 1440[0m
+[0;32mI (863) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (863) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (873) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (943) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (943) wifi:enable tsf
+I (953) wifi:Total power save buffer number: 16
+I (953) wifi:Init max length of beacon: 752/752
+I (953) wifi:Init max length of beacon: 752/752
+[0;32mI (963) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (973) wifi:ap channel adjust o:1,1 n:7,2
+I (973) wifi:new:<7,0>, old:<1,1>, ap:<7,2>, sta:<7,0>, prof:1
+I (973) wifi:state: init -> auth (b0)
+I (993) wifi:state: auth -> assoc (0)
+I (1023) wifi:state: assoc -> run (10)
+I (1133) wifi:connected with eunionoffice, aid = 2, channel 7, BW20, bssid = d4:9a:a0:be:2f:90
+I (1133) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (1133) wifi:pm start, type: 1
+
+I (1133) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1143) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2153) esp_netif_handlers: sta ip: 192.168.1.5, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2153) DEVICE: got ip:192.168.1.5[0m
+[0;32mI (2153) DEVICE: connected to ap SSID:eunionoffice password:!!!taolao123[0m
+[0;32mI (2163) DEVICE: Connected to WiFi network[0m
+[0;32mI (2163) DEVICE: Hosting at 192.168.4.1 now![0m
+[0;32mI (2173) ST7789: GPIO_CS=5[0m
+[0;32mI (2173) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2183) ST7789: GPIO_DC=19[0m
+[0;32mI (2183) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2193) ST7789: GPIO_RESET=17[0m
+[0;32mI (2203) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2203) main_task: Returned from app_main()[0m
+[0;32mI (2503) ST7789: GPIO_BL=-1[0m
+[0;32mI (2503) ST7789: GPIO_MOSI=23[0m
+[0;32mI (2503) ST7789: GPIO_SCLK=18[0m
+I (4433) wifi:<ba-add>idx:0 (ifx:0, d4:9a:a0:be:2f:90), tid:0, ssn:4, winSize:64
+[0;32mI (4453) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==!!!!!!![0m
+[0;32mI (4453) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDIzMQ==[0m
+[0;32mI (4453) DEVICE: String compare: 0[0m
+[0;32mI (4463) DEVICE: Generated HTML: <body><h1>ESP32 Web Server</h1><h2>Device Config</h2><div style="display: flex; justify-content: space-between;"><div style="flex: 1; margin-left: 10px;"><form method="POST" action="/admin_config"><label for="ssid">Wifi ID:</label><br><input type="text" id="ssid" name="ssid" value="eunionoffice"><br><label for="password">Wifi Password:</label><br><input type="password" id="password" name="password" value="!!!taolao123"><br><label for="Client_id">Client Id:</label><br><input type="text" id="Client_id" name="Client_id" value="AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh"><br><lable for="Client_secret">Client Secret:</label><br><input type="text" id="Client_secret" name="Client_secret" value="EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO"><br><label for="Business_name">Business Name:</label><br><input type="text" id="Business_name" name="Business_name" value="YNGU20"><br><label for="number_of_products">Number Of Products:</label><br><input type="text" id="number_of_products" name="number_of_products" value="0"><br><label for="adminPass">Admin Password:</label><br><input type="password" id="adminPass" name="adminPass" value="1234231"><br><label for="supporterPass">Supporter Password:</label><br><input type="password" id="supporterPass" name="supporterPass" value="champenaivematron"><br><input type="submit" value="Submit"></form><form method="post" action="/logout"><input type="submit" value="Get Back"></form></div><div style="flex: 1; margin-right: 10px;"><h3>Current Config:</h3><p id="current_ssid">SSID: eunionoffice</p><p id="current_password">Password: !!!taolao123</p><p id="current_ClientId">Client Id: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh</p><p id="current_ClientSecret">Client Secret: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO</p><p id="current_BusinessName">Business Name: YNGU20</p><p id="current_NumberOfProducts">Number Of Products: 0</p><p id="current_adminPass">Admin Password: 1234231</p><p id="current_supporterPass">Supporter Password: champenaivematron</p></div></div></body></html>[0m
+[0;32mI (6463) PNGTest: elapsed time[ms]:3260[0m
+[0;32mI (10463) DEVICE: Base64 decoded image size: 816[0m
+[0;32mI (10463) DEVICE: Base64 decoded image: �PNG
+
+[0m
+[0;32mI (13723) PNGTest: elapsed time[ms]:3240[0m
+[0;32mI (38623) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==[0m
+[0;32mI (38633) DEVICE: Received ssid=eunionoffice&password=%21%21%21taolao123&Client_id=AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh&Client_secret=EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO&Business_name=YNGU20&number_of_products=0&adminPass=123456789&supporterPass=champenaivematron[0m
+I (39743) wifi:state: run -> init (0)
+I (39743) wifi:pm stop, total sleep time: 34947403 us / 38603596 us
+
+I (39743) wifi:<ba-del>idx:0, tid:0
+I (39743) wifi:new:<7,0>, old:<7,0>, ap:<7,2>, sta:<7,0>, prof:1
+E (39753) wifi:NAN WiFi stop
+[0;32mI (39753) DEVICE: retry to connect to the AP[0m
+[0;32mI (39753) DEVICE: connect to the AP fail[0m
+I (39803) wifi:flush txq
+I (39803) wifi:stop sw txq
+I (39803) wifi:lmac stop hw txq
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 00:29:34[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00110000 000f0000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28918h (166168) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038940 vaddr=3ffb0000 size=03d64h ( 15716) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c6ac vaddr=40080000 size=0396ch ( 14700) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=96e40h (618048) map[0m
+[0;32mI (393) esp_image: segment 4: paddr=000d6e68 vaddr=4008396c size=14984h ( 84356) load[0m
+[0;32mI (438) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (438) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (458) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (458) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     st7789[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (471) cpu_start: Compile time:     Jul  1 2024 00:40:48[0m
+[0;32mI (477) cpu_start: ELF file SHA256:  be4032d9b...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB9240 len 00026DC0 (155 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400982F0 len 00007D10 (31 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (562) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (663) DEVICE: Partition size: total: 896321, used: 9036[0m
+[0;32mI (743) DEVICE: SSID: eunionoffice[0m
+[0;32mI (743) DEVICE: Password: !!!taolao123[0m
+[0;32mI (743) DEVICE: DeviceId: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh[0m
+[0;32mI (743) DEVICE: ServiceCode: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO[0m
+[0;32mI (753) DEVICE: BusinessName: YNGU20[0m
+[0;32mI (753) DEVICE: Number of Products: 0[0m
+[0;32mI (763) DEVICE: Admin Password: 123456789[0m
+[0;32mI (763) DEVICE: Supporter Password: champenaivematron[0m
+I (783) wifi:wifi driver task: 3ffc20cc, prio:23, stack:6656, core=0
+I (803) wifi:wifi firmware version: cc1dd81
+I (803) wifi:wifi certification version: v7.0
+I (803) wifi:config NVS flash: enabled
+I (803) wifi:config nano formating: disabled
+I (803) wifi:Init data frame dynamic rx buffer num: 32
+I (813) wifi:Init static rx mgmt buffer num: 5
+I (813) wifi:Init management short buffer num: 32
+I (823) wifi:Init dynamic tx buffer num: 32
+I (823) wifi:Init static rx buffer size: 1600
+I (823) wifi:Init static rx buffer num: 10
+I (833) wifi:Init dynamic rx buffer num: 32
+[0;32mI (833) wifi_init: rx ba win: 6[0m
+[0;32mI (833) wifi_init: tcpip mbox: 32[0m
+[0;32mI (843) wifi_init: udp mbox: 6[0m
+[0;32mI (843) wifi_init: tcp mbox: 6[0m
+[0;32mI (853) wifi_init: tcp tx win: 5760[0m
+[0;32mI (853) wifi_init: tcp rx win: 5760[0m
+[0;32mI (853) wifi_init: tcp mss: 1440[0m
+[0;32mI (863) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (863) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (873) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (943) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (943) wifi:enable tsf
+I (953) wifi:Total power save buffer number: 16
+I (953) wifi:Init max length of beacon: 752/752
+I (953) wifi:Init max length of beacon: 752/752
+[0;32mI (963) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (973) wifi:ap channel adjust o:1,1 n:7,2
+I (973) wifi:new:<7,0>, old:<1,1>, ap:<7,2>, sta:<7,0>, prof:1
+I (973) wifi:state: init -> auth (b0)
+I (993) wifi:state: auth -> assoc (0)
+I (1023) wifi:state: assoc -> run (10)
+I (1133) wifi:connected with eunionoffice, aid = 2, channel 7, BW20, bssid = d4:9a:a0:be:2f:90
+I (1133) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (1143) wifi:pm start, type: 1
+
+I (1143) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1163) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2153) esp_netif_handlers: sta ip: 192.168.1.5, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2153) DEVICE: got ip:192.168.1.5[0m
+[0;32mI (2153) DEVICE: connected to ap SSID:eunionoffice password:!!!taolao123[0m
+[0;32mI (2163) DEVICE: Connected to WiFi network[0m
+[0;32mI (2163) DEVICE: Hosting at 192.168.4.1 now![0m
+[0;32mI (2173) ST7789: GPIO_CS=5[0m
+[0;32mI (2173) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2183) ST7789: GPIO_DC=19[0m
+[0;32mI (2183) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2193) ST7789: GPIO_RESET=17[0m
+[0;32mI (2203) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2203) main_task: Returned from app_main()[0m
+I (2293) wifi:<ba-add>idx:0 (ifx:0, d4:9a:a0:be:2f:90), tid:0, ssn:7, winSize:64
+[0;32mI (2503) ST7789: GPIO_BL=-1[0m
+[0;32mI (2503) ST7789: GPIO_MOSI=23[0m
+[0;32mI (2503) ST7789: GPIO_SCLK=18[0m
+[0;32mI (3023) DEVICE: Authorization header: Basic YWRtaW46MTIzNDIzMQ==!!!!!!![0m
+[0;32mI (3023) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDU2Nzg5[0m
+[0;32mI (3023) DEVICE: String compare: -12[0m
+[0;32mI (6463) PNGTest: elapsed time[ms]:3260[0m
+[0;32mI (7423) DEVICE: Authorization header: Basic c3VwcG9ydGVyOmNoYW1wZW5haXZlbWF0cm9u!!!!!!![0m
+[0;32mI (7423) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDU2Nzg5[0m
+[0;32mI (7433) DEVICE: String compare: 10[0m
+[0;32mI (7483) DEVICE: Authorization header: Basic YWRtaW46MTIzNDU2!!!!!!![0m
+[0;32mI (7493) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDU2Nzg5[0m
+[0;32mI (7493) DEVICE: String compare: -78[0m
+[0;32mI (10463) DEVICE: Base64 decoded image size: 816[0m
+[0;32mI (10463) DEVICE: Base64 decoded image: �PNG
+
+[0m
+[0;32mI (13723) PNGTest: elapsed time[ms]:3240[0m
+[0;32mI (41823) DEVICE: Authorization header: Basic c3VwcG9ydGVyOmNoYW1wZW5haXZlbWF0cm9u!!!!!!![0m
+[0;32mI (41823) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDU2Nzg5[0m
+[0;32mI (41833) DEVICE: String compare: 10[0m
+[0;32mI (41893) DEVICE: Authorization header: Basic YWRtaW46MTIzNDU2Nzg5!!!!!!![0m
+[0;32mI (41893) DEVICE: Expected Auth Admin Header: Basic YWRtaW46MTIzNDU2Nzg5[0m
+[0;32mI (41893) DEVICE: String compare: 0[0m
+[0;32mI (41903) DEVICE: Generated HTML: <body><h1>ESP32 Web Server</h1><h2>Device Config</h2><div style="display: flex; justify-content: space-between;"><div style="flex: 1; margin-left: 10px;"><form method="POST" action="/admin_config"><label for="ssid">Wifi ID:</label><br><input type="text" id="ssid" name="ssid" value="eunionoffice"><br><label for="password">Wifi Password:</label><br><input type="password" id="password" name="password" value="!!!taolao123"><br><label for="Client_id">Client Id:</label><br><input type="text" id="Client_id" name="Client_id" value="AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh"><br><lable for="Client_secret">Client Secret:</label><br><input type="text" id="Client_secret" name="Client_secret" value="EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO"><br><label for="Business_name">Business Name:</label><br><input type="text" id="Business_name" name="Business_name" value="YNGU20"><br><label for="number_of_products">Number Of Products:</label><br><input type="text" id="number_of_products" name="number_of_products" value="0"><br><label for="adminPass">Admin Password:</label><br><input type="password" id="adminPass" name="adminPass" value="123456789"><br><label for="supporterPass">Supporter Password:</label><br><input type="password" id="supporterPass" name="supporterPass" value="champenaivematron"><br><input type="submit" value="Submit"></form><form method="post" action="/logout"><input type="submit" value="Get Back"></form></div><div style="flex: 1; margin-right: 10px;"><h3>Current Config:</h3><p id="current_ssid">SSID: eunionoffice</p><p id="current_password">Password: !!!taolao123</p><p id="current_ClientId">Client Id: AZyYXXjpRgyHyJSgEsTkpBzNp61F_dKGkNjjCMsUMdQsQPHWJNeG2aN61QZ-Dnh</p><p id="current_ClientSecret">Client Secret: EGb-tEe9T5SZqg8d3uFH_y_NW3eqh7W3K4MSC7bz7fmVuUkkRwl4mVC0G6g_IuO</p><p id="current_BusinessName">Business Name: YNGU20</p><p id="current_NumberOfProducts">Number Of Products: 0</p><p id="current_adminPass">Admin Password: 123456789</p><p id="current_supporterPass">Supporter Password: champenaivematron</p></div></div></body></html>[0m

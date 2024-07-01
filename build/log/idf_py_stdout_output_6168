@@ -1,0 +1,82 @@
+[1/6] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/htn0d/esp-idf-st7789-master/build/partition_table/partition-table.bin D:/htn0d/esp-idf-st7789-master/build/st7789.bin"
+st7789.bin binary size 0xdbbb0 bytes. Smallest app partition is 0x100000 bytes. 0x24450 bytes (14%) free.
+[2/6] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/spiffs/spiffsgen.py 0xf0000 D:/htn0d/esp-idf-st7789-master/font D:/htn0d/esp-idf-st7789-master/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[3/6] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\bootloader\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/htn0d/esp-idf-st7789-master/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[3/4] cmd.exe /C "cd /D C:\Users\xiaoy\esp\v5.2\esp-idf\components\esptool_py && C:\Users\xiaoy\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/xiaoy/esp/v5.2/esp-idf -D SERIAL_TOOL=C:/Users/xiaoy/.espresesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 st7789.bin 0x8000 partition_table/partition-table.bin 0x110000 storage.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:d7:eb:18:3f:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ebfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x001fffff...
+Compressed 26704 bytes to 16348...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16348 compressed) at 0x00001000 in 0.9 seconds (effective 244.0 kbit/s)...
+Hash of data verified.
+Compressed 900016 bytes to 559272...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d761... (5 %)
+Writing at 0x00027e62... (8 %)
+Writing at 0x0002e066... (11 %)
+Writing at 0x000348a0... (14 %)
+Writing at 0x0003f7f2... (17 %)
+Writing at 0x00045109... (20 %)
+Writing at 0x0004aff9... (22 %)
+Writing at 0x00050b94... (25 %)
+Writing at 0x00056b08... (28 %)
+Writing at 0x0005c6fe... (31 %)
+Writing at 0x0006271d... (34 %)
+Writing at 0x00067e7e... (37 %)
+Writing at 0x0006d0c7... (40 %)
+Writing at 0x00072650... (42 %)
+Writing at 0x000778c7... (45 %)
+Writing at 0x0007cfa6... (48 %)
+Writing at 0x000826b4... (51 %)
+Writing at 0x000880ef... (54 %)
+Writing at 0x0008dc9c... (57 %)
+Writing at 0x0009346e... (60 %)
+Writing at 0x000990d2... (62 %)
+Writing at 0x0009ee43... (65 %)
+Writing at 0x000a46c0... (68 %)
+Writing at 0x000aa3a4... (71 %)
+Writing at 0x000b0a49... (74 %)
+Writing at 0x000b6e83... (77 %)
+Writing at 0x000bc7b6... (80 %)
+Writing at 0x000c240c... (82 %)
+Writing at 0x000cce47... (85 %)
+Writing at 0x000d3a03... (88 %)
+Writing at 0x000d9a1b... (91 %)
+Writing at 0x000df5d1... (94 %)
+Writing at 0x000e585e... (97 %)
+Writing at 0x000eac54... (100 %)
+Wrote 900016 bytes (559272 compressed) at 0x00010000 in 13.0 seconds (effective 555.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.1 seconds (effective 425.4 kbit/s)...
+Hash of data verified.
+Compressed 983040 bytes to 72567...
+Writing at 0x00110000... (20 %)
+Writing at 0x00115846... (40 %)
+Writing at 0x00119c2a... (60 %)
+Writing at 0x0011dffc... (80 %)
+Writing at 0x0012256a... (100 %)
+Wrote 983040 bytes (72567 compressed) at 0x00110000 in 6.3 seconds (effective 1253.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+sif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/htn0d/esp-idf-st7789-master/build -P C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"

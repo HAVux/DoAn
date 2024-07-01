@@ -1,0 +1,300 @@
+ets Jul 29 2019 12:21:46
+
+rst:0�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbd8h (252888) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0004dc00 vaddr=3ffb0000 size=02418h (  9240) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad934h (710964) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd95c vaddr=3ffb2418 size=019ech (  6636) load[0m
+[0;32mI (449) esp_image: segment 4: paddr=000ff350 vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (529) cpu_start: Project name:     st7789[0m
+[0;32mI (534) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  c4b47e829...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (564) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFB9EA0 len 00026160 (152 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (612) spi_flash: flash io: dio[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (777) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) DEVICE: Partition size: total: 1980641, used: 112448[0m
+[0;32mI (1387) WIFI: Name: Milk[0m
+[0;32mI (1387) WIFI: Price: 1
+[0m
+[0;32mI (1387) WIFI: Name: Bread[0m
+[0;32mI (1387) WIFI: Price: 2
+[0m
+[0;32mI (1397) WIFI: Name: Eggs[0m
+[0;32mI (1397) WIFI: Price: 3
+[0m
+[0;32mI (1397) WIFI: Name: Cheese[0m
+[0;32mI (1407) WIFI: Price: 4
+[0m
+[0;32mI (1407) WIFI: Name: Crab[0m
+[0;32mI (1407) WIFI: Price: 1000[0m
+I (1427) wifi:wifi driver task: 3ffc30d4, prio:23, stack:6656, core=0
+I (1447) wifi:wifi firmware version: cc1dd81
+I (1447) wifi:wifi certification version: v7.0
+I (1447) wifi:config NVS flash: enabled
+I (1447) wifi:config nano formating: disabled
+I (1447) wifi:Init data frame dynamic rx buffer num: 32
+I (1457) wifi:Init static rx mgmt buffer num: 5
+I (1457) wifi:Init management short buffer num: 32
+I (1467) wifi:Init dynamic tx buffer num: 32
+I (1467) wifi:Init static rx buffer size: 1600
+I (1467) wifi:Init static rx buffer num: 10
+I (1477) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1477) wifi_init: rx ba win: 6[0m
+[0;32mI (1487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1487) wifi_init: udp mbox: 6[0m
+[0;32mI (1487) wifi_init: tcp mbox: 6[0m
+[0;32mI (1497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1507) wifi_init: tcp mss: 1440[0m
+[0;32mI (1507) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1527) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1597) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (1597) wifi:enable tsf
+I (1597) wifi:Total power save buffer number: 16
+I (1597) wifi:Init max length of beacon: 752/752
+I (1607) wifi:Init max length of beacon: 752/752
+[0;32mI (1607) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1627) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1
+I (1627) wifi:state: init -> auth (b0)
+I (1637) wifi:state: auth -> assoc (0)
+I (1647) wifi:state: assoc -> run (10)
+I (1667) wifi:<ba-add>idx:0 (ifx:0, 0a:16:51:f7:9b:ee), tid:6, ssn:0, winSize:64
+I (1757) wifi:connected with Cloud Coffee 2, aid = 75, channel 1, BW20, bssid = 0a:16:51:f7:9b:ee
+I (1757) wifi:security: WPA2-PSK, phy: bgn, rssi: -55
+I (1767) wifi:pm start, type: 1
+
+I (1767) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1807) wifi:<ba-add>idx:1 (ifx:0, 0a:16:51:f7:9b:ee), tid:0, ssn:0, winSize:64
+I (1917) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (2297) wifi:<ba-del>idx:1, tid:0
+I (2317) wifi:<ba-add>idx:1 (ifx:0, 0a:16:51:f7:9b:ee), tid:0, ssn:2, winSize:64
+[0;32mI (3277) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (3277) WIFI: got ip:192.168.61.51[0m
+[0;32mI (3277) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (3287) WIFI: Connected to WiFi network[0m
+[0;32mI (3287) WIFI: Hosting at 192.168.4.1 now![0m
+[0;33mW (15237) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (15237) transport_base: Failed to open a new connection[0m
+[0;31mE (15237) HTTP_CLIENT: Connection failed, sock < 0[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400014fd  PS      : 0x00060d30  A0      : 0x8016baf1  A1      : 0x3ffbb9e0  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3ffbb9a0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x3ffbbc24  A13     : 0x00000000  
+A14     : 0x3f403df4  A15     : 0x3ffbbbf4  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400014fa:0x3ffbb9e0 0x4016baee:0x3ffbb9f0 0x40165f21:0x3ffbbd10 0x4017c2c1:0x3ffbbd40 0x40092421:0x3ffbbd70 0x400dab67:0x3ffbbdc0 0x400daed6:0x3ffbbde0 0x400d88c5:0x3ffbc180 0x4017b930:0x3ffbc1b0 0x4008bb9d:0x3ffbc1d0
+
+
+
+
+ELF file SHA256: c4b47e829
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbd8h (252888) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=0004dc00 vaddr=3ffb0000 size=02418h (  9240) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad934h (710964) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd95c vaddr=3ffb2418 size=019ech (  6636) load[0m
+[0;32mI (448) esp_image: segment 4: paddr=000ff350 vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (529) cpu_start: Project name:     st7789[0m
+[0;32mI (534) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  c4b47e829...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (564) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFB9EA0 len 00026160 (152 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (777) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) DEVICE: Partition size: total: 1980641, used: 112448[0m
+[0;32mI (1387) WIFI: Name: Milk[0m
+[0;32mI (1387) WIFI: Price: 1
+[0m
+[0;32mI (1387) WIFI: Name: Bread[0m
+[0;32mI (1387) WIFI: Price: 2
+[0m
+[0;32mI (1397) WIFI: Name: Eggs[0m
+[0;32mI (1397) WIFI: Price: 3
+[0m
+[0;32mI (1397) WIFI: Name: Cheese[0m
+[0;32mI (1407) WIFI: Price: 4
+[0m
+[0;32mI (1407) WIFI: Name: Crab[0m
+[0;32mI (1407) WIFI: Price: 1000[0m
+I (1427) wifi:wifi driver task: 3ffc30d4, prio:23, stack:6656, core=0
+I (1447) wifi:wifi firmware version: cc1dd81
+I (1447) wifi:wifi certification version: v7.0
+I (1447) wifi:config NVS flash: enabled
+I (1447) wifi:config nano formating: disabled
+I (1447) wifi:Init data frame dynamic rx buffer num: 32
+I (1457) wifi:Init static rx mgmt buffer num: 5
+I (1457) wifi:Init management short buffer num: 32
+I (1467) wifi:Init dynamic tx buffer num: 32
+I (1467) wifi:Init static rx buffer size: 1600
+I (1467) wifi:Init static rx buffer num: 10
+I (1477) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1477) wifi_init: rx ba win: 6[0m
+[0;32mI (1487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1487) wifi_init: udp mbox: 6[0m
+[0;32mI (1487) wifi_init: tcp mbox: 6[0m
+[0;32mI (1497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1507) wifi_init: tcp mss: 1440[0m
+[0;32mI (1507) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1527) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1597) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (1597) wifi:enable tsf
+I (1597) wifi:Total power save buffer number: 16
+I (1597) wifi:Init max length of beacon: 752/752
+I (1597) wifi:Init max length of beacon: 752/752
+[0;32mI (1607) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1617) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1
+I (1617) wifi:state: init -> auth (b0)
+I (1627) wifi:state: auth -> assoc (0)
+I (1647) wifi:state: assoc -> run (10)
+I (1677) wifi:connected with Cloud Coffee 2, aid = 1, channel 1, BW20, bssid = 0a:b9:70:94:8d:51
+I (1677) wifi:security: WPA2-PSK, phy: bgn, rssi: -63
+I (1687) wifi:pm start, type: 1
+
+I (1687) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1727) wifi:<ba-add>idx:0 (ifx:0, 0a:b9:70:94:8d:51), tid:0, ssn:0, winSize:64
+I (1797) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2697) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (2697) WIFI: got ip:192.168.61.51[0m
+[0;32mI (2697) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (2707) WIFI: Connected to WiFi network[0m
+[0;32mI (2707) WIFI: Hosting at 192.168.4.1 now![0m
+[0;32mI (3687) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (4697) WIFI: Response: {"scope":"https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks","access_token":"A21AAJneaz7gaGpUUx5Nw-TuhOfOzcZI72ZQk7oAtlwbyS9NFyz-QNNgbFwuF7cOUneEdZWTv72wRfrIDqgWGahcxVU3bTjZA","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":32400,"nonce":"2024-07-01T08:00:14ZHGVFF05Za8Pu_kFAi0cVBEm7MzxfU-H9OL48btHyiNw"}[0m
+[0;32mI (4777) WIFI: Token: A21AAJneaz7gaGpUUx5Nw-TuhOfOzcZI72ZQk7oAtlwbyS9NFyz-QNNgbFwuF7cOUneEdZWTv72wRfrIDqgWGahcxVU3bTjZA[0m
+[0;32mI (4787) ST7789: GPIO_CS=5[0m
+[0;32mI (4797) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4807) ST7789: GPIO_DC=19[0m
+[0;32mI (4807) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4817) ST7789: GPIO_RESET=17[0m
+[0;32mI (4817) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4827) main_task: Returned from app_main()[0m
+[0;32mI (5127) ST7789: GPIO_BL=-1[0m
+[0;32mI (5127) ST7789: GPIO_MOSI=23[0m
+[0;32mI (5127) ST7789: GPIO_SCLK=18[0m
+[0;32mI (8667) PNGTest: elapsed time[ms]:2840[0m
+[0;32mI (13327) DEVICE: Button 2 pressed[0m
+[0;32mI (14567) DEVICE: Button 1 pressed[0m
+[0;32mI (14567) DEVICE: select product[0m
+[0;32mI (16467) DEVICE: Button 2 pressed[0m
+[0;32mI (16467) DEVICE: product index: 1[0m
+[0;32mI (17317) DEVICE: Button 2 pressed[0m
+[0;32mI (17317) DEVICE: product index: 2[0m
+[0;32mI (43667) DEVICE: Button 2 pressed[0m
+[0;32mI (43667) DEVICE: product index: 3[0m
+[0;32mI (44657) DEVICE: Button 2 pressed[0m
+[0;32mI (44657) DEVICE: product index: 4[0m
+[0;32mI (45827) DEVICE: Button 2 pressed[0m
+[0;32mI (45827) DEVICE: product index: 0[0m
+[0;32mI (47197) DEVICE: Button 2 pressed[0m
+[0;32mI (47197) DEVICE: product index: 1[0m
+[0;32mI (47887) DEVICE: Button 2 pressed[0m
+[0;32mI (47887) DEVICE: product index: 2[0m
+[0;32mI (48767) DEVICE: Button 2 pressed[0m
+[0;32mI (48767) DEVICE: product index: 3[0m
+[0;32mI (49227) DEVICE: Button 2 pressed[0m
+[0;32mI (49227) DEVICE: product index: 4[0m
+[0;32mI (49607) DEVICE: Button 2 pressed[0m
+[0;32mI (49607) DEVICE: product index: 0[0m

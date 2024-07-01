@@ -1,0 +1,107 @@
+[1/11] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/spiffs/spiffsgen.py 0x210000 D:/htn0d/esp-idf-st7789-master/font D:/htn0d/esp-idf-st7789-master/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\bootloader\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/htn0d/esp-idf-st7789-master/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[3/9] Building C object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi.c.obj
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: In function 'send_post_login_request':
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:96:9: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+   96 |     int ret = mbedtls_base64_encode(NULL, 0, &olen, (const unsigned char *)client_credentials, strlen(client_credentials));
+      |         ^~~
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c: At top level:
+D:/htn0d/esp-idf-st7789-master/components/wifi/wifi.c:380:13: warning: 'wifi_event_handler' defined but not used [-Wunused-function]
+  380 | static void wifi_event_handler(void* arg, esp_event_base_t event_base,int32_t event_id, void* event_data)
+      |             ^~~~~~~~~~~~~~~~~~
+[4/9] Linking C static library esp-idf\wifi\libwifi.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable st7789.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/htn0d/esp-idf-st7789-master/build/st7789.bin
+[8/9] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/htn0d/esp-idf-st7789-master/build/partition_table/partition-table.bin D:/htn0d/esp-idf-st7789-master/build/st7789.bin"
+st7789.bin binary size 0x103800 bytes. Smallest app partition is 0x110000 bytes. 0xc800 bytes (5%) free.
+Warning: The smallest app partition is nearly full (5% free space left)!
+[8/9] cmd.exe /C "cd /D C:\Users\xiaoy\esp\v5.2\esp-idf\components\esptool_py && C:\Users\xiaoy\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/xiaoy/esp/v5.2/esp-idf -D SERIAL_TOOL=C:/Users/xiaoy/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Users/xiaoy/esp/v5.2/esp-idfesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 st7789.bin 0x8000 partition_table/partition-table.bin 0x120000 storage.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:d7:eb:18:3f:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00113fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00120000 to 0x0032ffff...
+Compressed 26704 bytes to 16348...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16348 compressed) at 0x00001000 in 0.8 seconds (effective 251.6 kbit/s)...
+Hash of data verified.
+Compressed 1062912 bytes to 670149...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d817... (4 %)
+Writing at 0x00028b0c... (7 %)
+Writing at 0x0002d6cd... (9 %)
+Writing at 0x0003294d... (12 %)
+Writing at 0x000387f9... (14 %)
+Writing at 0x0003de08... (17 %)
+Writing at 0x000438c4... (19 %)
+Writing at 0x00050a58... (21 %)
+Writing at 0x000563ff... (24 %)
+Writing at 0x0005bfee... (26 %)
+Writing at 0x00061db6... (29 %)
+Writing at 0x00067b69... (31 %)
+Writing at 0x0006d734... (34 %)
+Writing at 0x00073307... (36 %)
+Writing at 0x00079109... (39 %)
+Writing at 0x0007f744... (41 %)
+Writing at 0x000853b7... (43 %)
+Writing at 0x0008b0a4... (46 %)
+Writing at 0x0009038c... (48 %)
+Writing at 0x0009573e... (51 %)
+Writing at 0x0009acc1... (53 %)
+Writing at 0x000a0024... (56 %)
+Writing at 0x000a5698... (58 %)
+Writing at 0x000aaf70... (60 %)
+Writing at 0x000b0ef1... (63 %)
+Writing at 0x000b69ac... (65 %)
+Writing at 0x000bc669... (68 %)
+Writing at 0x000c21bd... (70 %)
+Writing at 0x000c7d37... (73 %)
+Writing at 0x000cd629... (75 %)
+Writing at 0x000d33fc... (78 %)
+Writing at 0x000d9bf8... (80 %)
+Writing at 0x000df556... (82 %)
+Writing at 0x000e5275... (85 %)
+Writing at 0x000ef44b... (87 %)
+Writing at 0x000f6c5a... (90 %)
+Writing at 0x000fd0ef... (92 %)
+Writing at 0x00102b5e... (95 %)
+Writing at 0x00108c56... (97 %)
+Writing at 0x0010e80c... (100 %)
+Wrote 1062912 bytes (670149 compressed) at 0x00010000 in 16.2 seconds (effective 525.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 292.2 kbit/s)...
+Hash of data verified.
+Compressed 2162688 bytes to 74764...
+Writing at 0x00120000... (20 %)
+Writing at 0x00125846... (40 %)
+Writing at 0x00129c2a... (60 %)
+Writing at 0x0012dffd... (80 %)
+Writing at 0x00132569... (100 %)
+Wrote 2162688 bytes (74764 compressed) at 0x00120000 in 12.7 seconds (effective 1358.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/htn0d/esp-idf-st7789-master/build -P C:/Users/xiaoy/esp/v5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"

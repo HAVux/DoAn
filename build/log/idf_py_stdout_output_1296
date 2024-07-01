@@ -1,0 +1,633 @@
+ets Jul 29 2019 12:21:46
+
+rst:0�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbd8h (252888) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0004dc00 vaddr=3ffb0000 size=02418h (  9240) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad900h (710912) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd928 vaddr=3ffb2418 size=019ech (  6636) load[0m
+[0;32mI (449) esp_image: segment 4: paddr=000ff31c vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (529) cpu_start: Project name:     st7789[0m
+[0;32mI (534) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  c413e1dbb...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (564) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFB9AB8 len 00026548 (153 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (612) spi_flash: flash io: dio[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (777) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) DEVICE: Partition size: total: 1980641, used: 74296[0m
+[0;32mI (1387) WIFI: Name: Milk[0m
+[0;32mI (1387) WIFI: Price: 1
+[0m
+[0;32mI (1387) WIFI: Name: Bread[0m
+[0;32mI (1387) WIFI: Price: 2
+[0m
+[0;32mI (1387) WIFI: Name: Eggs[0m
+[0;32mI (1397) WIFI: Price: 3
+[0m
+[0;32mI (1397) WIFI: Name: Cheese[0m
+[0;32mI (1397) WIFI: Price: 4
+[0m
+[0;32mI (1407) WIFI: Name: Crab[0m
+[0;32mI (1407) WIFI: Price: 1000[0m
+I (1427) wifi:wifi driver task: 3ffc2d70, prio:23, stack:6656, core=0
+I (1447) wifi:wifi firmware version: cc1dd81
+I (1447) wifi:wifi certification version: v7.0
+I (1447) wifi:config NVS flash: enabled
+I (1447) wifi:config nano formating: disabled
+I (1447) wifi:Init data frame dynamic rx buffer num: 32
+I (1457) wifi:Init static rx mgmt buffer num: 5
+I (1457) wifi:Init management short buffer num: 32
+I (1467) wifi:Init dynamic tx buffer num: 32
+I (1467) wifi:Init static rx buffer size: 1600
+I (1467) wifi:Init static rx buffer num: 10
+I (1477) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1477) wifi_init: rx ba win: 6[0m
+[0;32mI (1487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1487) wifi_init: udp mbox: 6[0m
+[0;32mI (1487) wifi_init: tcp mbox: 6[0m
+[0;32mI (1497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1507) wifi_init: tcp mss: 1440[0m
+[0;32mI (1507) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1527) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1587) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (1597) wifi:enable tsf
+I (1597) wifi:Total power save buffer number: 16
+I (1597) wifi:Init max length of beacon: 752/752
+I (1597) wifi:Init max length of beacon: 752/752
+[0;32mI (1607) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1617) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1
+I (1617) wifi:state: init -> auth (b0)
+I (1627) wifi:state: auth -> assoc (0)
+I (1647) wifi:state: assoc -> run (10)
+I (1697) wifi:<ba-add>idx:0 (ifx:0, 0a:16:51:f7:9b:ee), tid:6, ssn:0, winSize:64
+I (1727) wifi:connected with Cloud Coffee 2, aid = 60, channel 1, BW20, bssid = 0a:16:51:f7:9b:ee
+I (1727) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (1727) wifi:pm start, type: 1
+
+I (1727) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1887) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (2257) wifi:<ba-add>idx:1 (ifx:0, 0a:16:51:f7:9b:ee), tid:0, ssn:0, winSize:64
+[0;32mI (3237) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (3237) WIFI: got ip:192.168.61.51[0m
+[0;32mI (3237) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (3247) WIFI: Connected to WiFi network[0m
+[0;32mI (3247) WIFI: Hosting at 192.168.4.1 now![0m
+[0;31mE (10257) esp-tls: couldn't get hostname for :api-m.sandbox.paypal.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10257) esp-tls: Failed to open new connection[0m
+[0;31mE (10257) transport_base: Failed to open a new connection[0m
+[0;31mE (10267) HTTP_CLIENT: Connection failed, sock < 0[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400014fd  PS      : 0x00060730  A0      : 0x8016babd  A1      : 0x3ffbb5f0  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3ffbb5b0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x3ffbb834  A13     : 0x00000000  
+A14     : 0x3f403df8  A15     : 0x3ffbb804  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400014fa:0x3ffbb5f0 0x4016baba:0x3ffbb600 0x40165eed:0x3ffbb920 0x4017c28d:0x3ffbb950 0x40092421:0x3ffbb980 0x400dab3b:0x3ffbb9d0 0x400daeaa:0x3ffbb9f0 0x400d8899:0x3ffbbd90 0x4017b8fc:0x3ffbbdc0 0x4008bb9d:0x3ffbbde0
+
+
+
+
+ELF file SHA256: c413e1dbb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbd8h (252888) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=0004dc00 vaddr=3ffb0000 size=02418h (  9240) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad900h (710912) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd928 vaddr=3ffb2418 size=019ech (  6636) load[0m
+[0;32mI (448) esp_image: segment 4: paddr=000ff31c vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (529) cpu_start: Project name:     st7789[0m
+[0;32mI (533) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  c413e1dbb...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (564) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFB9AB8 len 00026548 (153 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (777) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) DEVICE: Partition size: total: 1980641, used: 74296[0m
+[0;32mI (1387) WIFI: Name: Milk[0m
+[0;32mI (1387) WIFI: Price: 1
+[0m
+[0;32mI (1387) WIFI: Name: Bread[0m
+[0;32mI (1387) WIFI: Price: 2
+[0m
+[0;32mI (1387) WIFI: Name: Eggs[0m
+[0;32mI (1397) WIFI: Price: 3
+[0m
+[0;32mI (1397) WIFI: Name: Cheese[0m
+[0;32mI (1397) WIFI: Price: 4
+[0m
+[0;32mI (1407) WIFI: Name: Crab[0m
+[0;32mI (1407) WIFI: Price: 1000[0m
+I (1427) wifi:wifi driver task: 3ffc2d70, prio:23, stack:6656, core=0
+I (1447) wifi:wifi firmware version: cc1dd81
+I (1447) wifi:wifi certification version: v7.0
+I (1447) wifi:config NVS flash: enabled
+I (1447) wifi:config nano formating: disabled
+I (1447) wifi:Init data frame dynamic rx buffer num: 32
+I (1457) wifi:Init static rx mgmt buffer num: 5
+I (1457) wifi:Init management short buffer num: 32
+I (1467) wifi:Init dynamic tx buffer num: 32
+I (1467) wifi:Init static rx buffer size: 1600
+I (1467) wifi:Init static rx buffer num: 10
+I (1477) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1477) wifi_init: rx ba win: 6[0m
+[0;32mI (1487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1487) wifi_init: udp mbox: 6[0m
+[0;32mI (1487) wifi_init: tcp mbox: 6[0m
+[0;32mI (1497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1507) wifi_init: tcp mss: 1440[0m
+[0;32mI (1507) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1527) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1597) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (1597) wifi:enable tsf
+I (1607) wifi:Total power save buffer number: 16
+I (1607) wifi:Init max length of beacon: 752/752
+I (1607) wifi:Init max length of beacon: 752/752
+[0;32mI (1617) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1627) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1
+I (1627) wifi:state: init -> auth (b0)
+I (1637) wifi:state: auth -> assoc (0)
+I (1647) wifi:state: assoc -> run (10)
+I (1717) wifi:<ba-add>idx:0 (ifx:0, 0a:16:51:f7:9b:ee), tid:6, ssn:0, winSize:64
+I (1757) wifi:connected with Cloud Coffee 2, aid = 60, channel 1, BW20, bssid = 0a:16:51:f7:9b:ee
+I (1757) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (1757) wifi:pm start, type: 1
+
+I (1757) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1767) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1857) wifi:<ba-add>idx:1 (ifx:0, 0a:16:51:f7:9b:ee), tid:0, ssn:0, winSize:64
+[0;32mI (2777) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (2777) WIFI: got ip:192.168.61.51[0m
+[0;32mI (2777) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (2787) WIFI: Connected to WiFi network[0m
+[0;32mI (2787) WIFI: Hosting at 192.168.4.1 now![0m
+[0;32mI (6727) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (8137) WIFI: Response: {"scope":"https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks","access_token":"A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":32400,"nonce":"2024-07-01T07:01:23ZBl_vQkWCEVDjSRjQy0OESRUQNujJS1u6_F9TTuvKaFc"}[0m
+[0;32mI (8217) WIFI: Token: A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg[0m
+[0;32mI (8227) ST7789: GPIO_CS=5[0m
+[0;32mI (8227) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8237) ST7789: GPIO_DC=19[0m
+[0;32mI (8237) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8247) ST7789: GPIO_RESET=17[0m
+[0;32mI (8257) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8267) main_task: Returned from app_main()[0m
+[0;32mI (8567) ST7789: GPIO_BL=-1[0m
+[0;32mI (8567) ST7789: GPIO_MOSI=23[0m
+[0;32mI (8567) ST7789: GPIO_SCLK=18[0m
+[0;32mI (12117) PNGTest: elapsed time[ms]:2850[0m
+[0;32mI (16027) DEVICE: Button 1 pressed[0m
+[0;32mI (16027) DEVICE: select product[0m
+[0;32mI (18037) DEVICE: Button 3 pressed[0m
+[0;32mI (18037) DEVICE: product index: 0[0m
+[0;32mI (19947) DEVICE: Button 1 pressed[0m
+[0;32mI (19947) DEVICE: choose quantity[0m
+[0;32mI (21917) DEVICE: Button 2 pressed[0m
+[0;32mI (21917) DEVICE: quantity: 0[0m
+[0;32mI (22117) DEVICE: Button 2 pressed[0m
+[0;32mI (22117) DEVICE: quantity: 1[0m
+[0;32mI (23897) DEVICE: Button 1 pressed[0m
+[0;32mI (23897) DEVICE: confirm quantity[0m
+[0;32mI (25507) DEVICE: Button 1 pressed[0m
+[0;32mI (25507) DEVICE: confirm cart[0m
+[0;32mI (26467) DEVICE: Button 1 pressed[0m
+[0;32mI (26467) DEVICE: pay now[0m
+[0;32mI (26517) DEVICE: send request to server and wait for QR code[0m
+[0;32mI (26517) WIFI: Post data: {"merchant_info": {"business_name": "Vuu Vinh Tu"},"items": [{"name": "Crab", "quantity": 2, "unit_price": {"currency": "USD", "value": "1000"}}]}[0m
+[0;32mI (26897) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (27407) WIFI: Response: 
+[0m
+[0;31mE (27407) WIFI: Invoice ID not found in response[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400014fd  PS      : 0x00060930  A0      : 0x80168701  A1      : 0x3ffd3dc0  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3ffd40a0  
+A10     : 0x00000003  A11     : 0x00060923  A12     : 0x00060920  A13     : 0x00000004  
+A14     : 0xffffffff  A15     : 0x3ffd26e4  SAR     : 0x0000001e  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400014fa:0x3ffd3dc0 0x401686fe:0x3ffd3dd0 0x40165ec1:0x3ffd40f0 0x400db036:0x3ffd41b0 0x400d7fc9:0x3ffd4460 0x4008bb9d:0x3ffd4480
+
+
+
+
+ELF file SHA256: c413e1dbb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbd8h (252888) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=0004dc00 vaddr=3ffb0000 size=02418h (  9240) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad900h (710912) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd928 vaddr=3ffb2418 size=019ech (  6636) load[0m
+[0;32mI (448) esp_image: segment 4: paddr=000ff31c vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (529) cpu_start: Project name:     st7789[0m
+[0;32mI (533) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  c413e1dbb...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (564) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFB9AB8 len 00026548 (153 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (777) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) DEVICE: Partition size: total: 1980641, used: 74296[0m
+[0;32mI (1387) WIFI: Name: Milk[0m
+[0;32mI (1387) WIFI: Price: 1
+[0m
+[0;32mI (1387) WIFI: Name: Bread[0m
+[0;32mI (1387) WIFI: Price: 2
+[0m
+[0;32mI (1387) WIFI: Name: Eggs[0m
+[0;32mI (1397) WIFI: Price: 3
+[0m
+[0;32mI (1397) WIFI: Name: Cheese[0m
+[0;32mI (1397) WIFI: Price: 4
+[0m
+[0;32mI (1407) WIFI: Name: Crab[0m
+[0;32mI (1407) WIFI: Price: 1000[0m
+I (1427) wifi:wifi driver task: 3ffc2d70, prio:23, stack:6656, core=0
+I (1447) wifi:wifi firmware version: cc1dd81
+I (1447) wifi:wifi certification version: v7.0
+I (1447) wifi:config NVS flash: enabled
+I (1447) wifi:config nano formating: disabled
+I (1447) wifi:Init data frame dynamic rx buffer num: 32
+I (1457) wifi:Init static rx mgmt buffer num: 5
+I (1457) wifi:Init management short buffer num: 32
+I (1467) wifi:Init dynamic tx buffer num: 32
+I (1467) wifi:Init static rx buffer size: 1600
+I (1467) wifi:Init static rx buffer num: 10
+I (1477) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1477) wifi_init: rx ba win: 6[0m
+[0;32mI (1487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1487) wifi_init: udp mbox: 6[0m
+[0;32mI (1487) wifi_init: tcp mbox: 6[0m
+[0;32mI (1497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1507) wifi_init: tcp mss: 1440[0m
+[0;32mI (1507) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1527) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1597) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (1597) wifi:enable tsf
+I (1597) wifi:Total power save buffer number: 16
+I (1597) wifi:Init max length of beacon: 752/752
+I (1597) wifi:Init max length of beacon: 752/752
+[0;32mI (1607) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1637) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1
+I (1637) wifi:state: init -> auth (b0)
+I (1697) wifi:state: auth -> assoc (0)
+I (1767) wifi:state: assoc -> run (10)
+I (1897) wifi:<ba-add>idx:0 (ifx:0, 0a:16:51:f7:9b:ee), tid:6, ssn:0, winSize:64
+I (2007) wifi:connected with Cloud Coffee 2, aid = 60, channel 1, BW20, bssid = 0a:16:51:f7:9b:ee
+I (2007) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (2007) wifi:pm start, type: 1
+
+I (2007) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2097) wifi:<ba-add>idx:1 (ifx:0, 0a:16:51:f7:9b:ee), tid:0, ssn:0, winSize:64
+I (2127) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3017) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (3017) WIFI: got ip:192.168.61.51[0m
+[0;32mI (3017) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (3027) WIFI: Connected to WiFi network[0m
+[0;32mI (3027) WIFI: Hosting at 192.168.4.1 now![0m
+[0;32mI (5897) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (8097) WIFI: Response: {"scope":"https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks","access_token":"A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":32373,"nonce":"2024-07-01T07:01:23ZBl_vQkWCEVDjSRjQy0OESRUQNujJS1u6_F9TTuvKaFc"}[0m
+[0;32mI (8167) WIFI: Token: A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg[0m
+[0;32mI (8177) ST7789: GPIO_CS=5[0m
+[0;32mI (8187) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8197) main_task: Returned from app_main()[0m
+[0;32mI (8197) ST7789: GPIO_DC=19[0m
+[0;32mI (8207) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8207) ST7789: GPIO_RESET=17[0m
+[0;32mI (8217) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8527) ST7789: GPIO_BL=-1[0m
+[0;32mI (8527) ST7789: GPIO_MOSI=23[0m
+[0;32mI (8527) ST7789: GPIO_SCLK=18[0m
+[0;32mI (12067) PNGTest: elapsed time[ms]:2840[0m
+[0;32mI (162987) DEVICE: Button 1 pressed[0m
+[0;32mI (162987) DEVICE: select product[0m
+[0;32mI (164607) DEVICE: Button 1 pressed[0m
+[0;32mI (164607) DEVICE: choose quantity[0m
+[0;32mI (166577) DEVICE: Button 2 pressed[0m
+[0;32mI (166577) DEVICE: quantity: 0[0m
+[0;32mI (168017) DEVICE: Button 1 pressed[0m
+[0;32mI (168017) DEVICE: confirm quantity[0m
+[0;32mI (169107) DEVICE: Button 1 pressed[0m
+[0;32mI (169107) DEVICE: confirm cart[0m
+[0;32mI (170047) DEVICE: Button 1 pressed[0m
+[0;32mI (170047) DEVICE: pay now[0m
+[0;32mI (170097) DEVICE: send request to server and wait for QR code[0m
+[0;32mI (170097) WIFI: Post data: {"merchant_info": {"business_name": "Vuu Vinh Tu"},"items": [{"name": "Milk", "quantity": 1, "unit_price": {"currency": "USD", "value": "1"}}]}[0m
+[0;32mI (170417) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (173577) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"DRAFT","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"send","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/send","method":"POST"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"delete","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"DELETE"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"}]}[0m
+[0;32mI (173667) WIFI: Invoice ID: INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (174517) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (176757) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code[0m
+[0;32mI (176767) WIFI: Post data: {"width": 200, "height": 200}[0m
+[0;32mI (177497) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (180947) WIFI: Response: {"image":"iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQAAAADjreInAAADB0lEQVR42u3cMZKrMAyAYTMpUnKEPQpHI0fjKDkCJUVm/TCyZJHAZt97M7GL300I8JHG8ciyTIj/1eaAx+PxeDwej8fj/9I/gravdLKL0zWmb+P6bUoHF392a1c8vh0/Sn8OX+vhemdcgpz9DkPMqJMb5MYJj2/Jz1ufdpfT4a1f/fqo+3qxtx9Ij8Ljm/Tl8l0G7fWvIE/9fr4Bj2/Op04f/UidhvLtUQGPb9aX+CP0W09Pg/bohvJfxy94/Me9zf8kfp6u8eTw3fwRj/+437XbenXQUb1L+Ys0fqdRPXf6N/k7PP7D/qF9evvot6SFjt85fr7JLfIouQGPb8Nb0njLVATr9GnSN+j8b9f/pyse35DPmWKNlJegSeOpTPq2v4KFInh8M34LOmTRQ/u/rn8sfv3ubPzG4+t5iT8GzV9Em+n1sv7s4g9Rh/NHPL6e7zRTnPPHrv9bgm55ngri8Q14F3RcpKdfd1nl3AaNP17zb3h8PS/nhsWnJzSU9vm3fKgJOjy+CW9NIw2Xf8uhdChZ5R/WP/D4Kt7mdDb/s1Li1/rho/gDj6/mLTzWy5Z/C7usnNZfntS/4/FVvMu/uaAj+Eo1nRXmUrbT/B0eX8Hnc7v9RxdZqdulkl0pJh7fjneZtrmTnu72zwWftDjKv+Hx9fzDVjpceeXmX1aldSk64vGt+OjXlHUo96VsZSjXXUl4fENeMxU+/3YpnV5+IBdojofxCx5fy0t4HNykT/NvNiv0AfZB/TseX9XPJb1W8m+2f+5h689n/R+Pr+lzTfvditbcrNBSGXlXvmzFx+Ob8nG3U0NKgTo3VGs76/94fB3vmhWtaf+3Xc27qrYJj2/G7/bf7/Jv0W/aCLoV/8f9+3j8x/1Y6tf8Vrr+2T/9QfD4Nnx5vdQ4l/rLufNVmRZ/dHh8q17zbyFoVu75VT5H8z88vhHfR//Sk8EtOi/W/yc8viWv8Ud56VSMu6TbXN4fEV/33+PxNf3B+/9y/s3VX77Zv4/H1/H/3PB4PB6Px+PxePwH/R+FT/KBzI1mRwAAAABJRU5ErkJggg=="}[0m
+[0;32mI (181037) WIFI: Image: iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQAAAADjreInAAADB0lEQVR42u3cMZKrMAyAYTMpUnKEPQpHI0fjKDkCJUVm/TCyZJHAZt97M7GL300I8JHG8ciyTIj/1eaAx+PxeDwej8fj/9I/gravdLKL0zWmb+P6bUoHF392a1c8vh0/Sn8OX+vhemdcgpz9DkPMqJMb5MYJj2/Jz1ufdpfT4a1f/fqo+3qxtx9Ij8Ljm/Tl8l0G7fWvIE/9fr4Bj2/Op04f/UidhvLtUQGPb9aX+CP0W09Pg/bohvJfxy94/Me9zf8kfp6u8eTw3fwRj/+437XbenXQUb1L+Ys0fqdRPXf6N/k7PP7D/qF9evvot6SFjt85fr7JLfIouQGPb8Nb0njLVATr9GnSN+j8b9f/pyse35DPmWKNlJegSeOpTPq2v4KFInh8M34LOmTRQ/u/rn8sfv3ubPzG4+t5iT8GzV9Em+n1sv7s4g9Rh/NHPL6e7zRTnPPHrv9bgm55ngri8Q14F3RcpKdfd1nl3AaNP17zb3h8PS/nhsWnJzSU9vm3fKgJOjy+CW9NIw2Xf8uhdChZ5R/WP/D4Kt7mdDb/s1Li1/rho/gDj6/mLTzWy5Z/C7usnNZfntS/4/FVvMu/uaAj+Eo1nRXmUrbT/B0eX8Hnc7v9RxdZqdulkl0pJh7fjneZtrmTnu72zwWftDjKv+Hx9fzDVjpceeXmX1aldSk64vGt+OjXlHUo96VsZSjXXUl4fENeMxU+/3YpnV5+IBdojofxCx5fy0t4HNykT/NvNiv0AfZB/TseX9XPJb1W8m+2f+5h689n/R+Pr+lzTfvditbcrNBSGXlXvmzFx+Ob8nG3U0NKgTo3VGs76/94fB3vmhWtaf+3Xc27qrYJj2/G7/bf7/Jv0W/aCLoV/8f9+3j8x/1Y6tf8Vrr+2T/9QfD4Nnx5vdQ4l/rLufNVmRZ/dHh8q17zbyFoVu75VT5H8z88vhHfR//Sk8EtOi/W/yc8viWv8Ud56VSMu6TbXN4fEV/33+PxNf3B+/9y/s3VX77Zv4/H1/H/3PB4PB6Px+PxePwH/R+FT/KBzI1mRwAAAABJRU5ErkJggg==[0m
+[0;32mI (181067) DEVICE: Base64 decoded image size: 832[0m
+[0;32mI (181137) DEVICE: Base64 decoded image: �PNG
+
+[0m
+[0;32mI (184407) PNGTest: elapsed time[ms]:3250[0m
+[0;32mI (184407) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (184587) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (185637) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (185747) WIFI: Status: UNPAID[0m
+[0;32mI (186187) DEVICE: display QR code[0m
+[0;32mI (186757) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (187577) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (188807) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (188917) WIFI: Status: UNPAID[0m
+[0;32mI (189927) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (191237) DEVICE: print bill[0m
+[0;32mI (193277) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (195957) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (196067) WIFI: Status: UNPAID[0m
+[0;32mI (196287) DEVICE: finish a sesion[0m
+[0;32mI (197067) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (199037) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (201337) DEVICE: reset index and return to state 0[0m
+[0;32mI (202257) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (202367) WIFI: Status: UNPAID[0m
+[0;32mI (203377) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (203697) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (204707) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (204807) WIFI: Status: UNPAID[0m
+[0;32mI (205817) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (206357) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (207757) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (207867) WIFI: Status: UNPAID[0m
+[0;32mI (208867) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (209237) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (210997) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (211107) WIFI: Status: UNPAID[0m
+[0;32mI (212107) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (212537) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (214217) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (214327) WIFI: Status: UNPAID[0m
+[0;32mI (215327) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (215747) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (217287) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (217397) WIFI: Status: UNPAID[0m
+[0;32mI (218407) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (218647) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (219597) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (219707) WIFI: Status: UNPAID[0m
+[0;32mI (220717) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (221037) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (222527) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (222637) WIFI: Status: UNPAID[0m
+[0;32mI (223637) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (224577) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (225907) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (226007) WIFI: Status: UNPAID[0m
+[0;32mI (227017) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (227797) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (228787) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (228897) WIFI: Status: UNPAID[0m
+[0;32mI (229907) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (230797) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (231857) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (231967) WIFI: Status: UNPAID[0m
+[0;32mI (232977) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (233547) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (234397) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (234507) WIFI: Status: UNPAID[0m
+[0;32mI (235517) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (235887) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (237077) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (237177) WIFI: Status: UNPAID[0m
+[0;32mI (238187) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (238847) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (239927) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (240037) WIFI: Status: UNPAID[0m
+[0;32mI (241047) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (241317) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (242317) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (242417) WIFI: Status: UNPAID[0m
+[0;32mI (243427) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (243677) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (244727) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (244837) WIFI: Status: UNPAID[0m
+[0;32mI (245837) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (245997) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (246907) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (247017) WIFI: Status: UNPAID[0m
+[0;32mI (248017) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (248197) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (249117) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (249227) WIFI: Status: UNPAID[0m
+[0;32mI (250237) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (250407) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (251997) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (252107) WIFI: Status: UNPAID[0m
+[0;32mI (253117) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (253357) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (255087) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (255187) WIFI: Status: UNPAID[0m
+[0;32mI (256197) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (256567) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (257697) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (257797) WIFI: Status: UNPAID[0m
+[0;32mI (258807) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (259737) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (261127) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (261237) WIFI: Status: UNPAID[0m
+[0;32mI (262247) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (265677) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (267937) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (268047) WIFI: Status: UNPAID[0m
+[0;32mI (269057) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (269577) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (270857) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (270967) WIFI: Status: UNPAID[0m
+[0;32mI (271977) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (272267) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (273107) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (273217) WIFI: Status: UNPAID[0m
+[0;32mI (274217) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (274367) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (275257) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (275367) WIFI: Status: UNPAID[0m
+[0;32mI (276377) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (276607) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (277507) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (277617) WIFI: Status: UNPAID[0m
+[0;32mI (278617) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (278817) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (279687) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (279787) WIFI: Status: UNPAID[0m
+[0;32mI (280797) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (281057) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (283047) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (283157) WIFI: Status: UNPAID[0m
+[0;32mI (284167) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (285057) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (286647) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (286757) WIFI: Status: UNPAID[0m
+[0;32mI (287757) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (288017) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (289367) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (289477) WIFI: Status: UNPAID[0m
+[0;32mI (290487) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (290937) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (292547) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (292647) WIFI: Status: UNPAID[0m
+[0;32mI (293657) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (294027) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (295547) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (295657) WIFI: Status: UNPAID[0m
+[0;32mI (296667) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (298357) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (300767) WIFI: Response: {"id":"INV2-MC2P-YE7L-ZSY2-22TS","number":"0072","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Milk","quantity":1.0,"unit_price":{"currency":"USD","value":"1.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1.00"},"metadata":{"created_date":"2024-07-01 00:04:36 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-MC2P-YE7L-ZSY2-22TS"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS/qr-code","method":"GET"}]}[0m
+[0;32mI (300867) WIFI: Status: UNPAID[0m
+[0;32mI (301877) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-MC2P-YE7L-ZSY2-22TS[0m
+[0;32mI (302307) esp-x509-crt-bundle: Certificate validated[0m

@@ -1,0 +1,423 @@
+ets Jul 29 2019 12:21:46
+
+rst:0ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbf8h (252920) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0004dc20 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad904h (710916) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd92c vaddr=3ffb23f8 size=01a0ch (  6668) load[0m
+[0;32mI (449) esp_image: segment 4: paddr=000ff340 vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (529) cpu_start: Project name:     st7789[0m
+[0;32mI (533) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  7306e4b15...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (564) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFB9EC0 len 00026140 (152 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (777) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (777) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) DEVICE: Partition size: total: 1980641, used: 112448[0m
+[0;32mI (967) ST7789: GPIO_CS=5[0m
+[0;32mI (967) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) ST7789: GPIO_DC=19[0m
+[0;32mI (977) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (987) ST7789: GPIO_RESET=17[0m
+[0;32mI (987) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1297) ST7789: GPIO_BL=-1[0m
+[0;32mI (1297) ST7789: GPIO_MOSI=23[0m
+[0;32mI (1297) ST7789: GPIO_SCLK=18[0m
+[0;32mI (2417) WIFI: Name: Milk[0m
+[0;32mI (2417) WIFI: Price: 1
+[0m
+[0;32mI (2417) WIFI: Name: Bread[0m
+[0;32mI (2417) WIFI: Price: 2
+[0m
+[0;32mI (2417) WIFI: Name: Eggs[0m
+[0;32mI (2427) WIFI: Price: 3
+[0m
+[0;32mI (2427) WIFI: Name: Cheese[0m
+[0;32mI (2427) WIFI: Price: 4
+[0m
+[0;32mI (2437) WIFI: Name: Crab[0m
+[0;32mI (2437) WIFI: Price: 1000[0m
+I (2457) wifi:wifi driver task: 3ffc3528, prio:23, stack:6656, core=0
+I (2477) wifi:wifi firmware version: cc1dd81
+I (2477) wifi:wifi certification version: v7.0
+I (2477) wifi:config NVS flash: enabled
+I (2477) wifi:config nano formating: disabled
+I (2477) wifi:Init data frame dynamic rx buffer num: 32
+I (2487) wifi:Init static rx mgmt buffer num: 5
+I (2487) wifi:Init management short buffer num: 32
+I (2497) wifi:Init dynamic tx buffer num: 32
+I (2497) wifi:Init static rx buffer size: 1600
+I (2497) wifi:Init static rx buffer num: 10
+I (2507) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2507) wifi_init: rx ba win: 6[0m
+[0;32mI (2517) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2517) wifi_init: udp mbox: 6[0m
+[0;32mI (2517) wifi_init: tcp mbox: 6[0m
+[0;32mI (2527) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2527) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2537) wifi_init: tcp mss: 1440[0m
+[0;32mI (2537) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2547) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2557) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (2627) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (2627) wifi:enable tsf
+I (2627) wifi:Total power save buffer number: 16
+I (2627) wifi:Init max length of beacon: 752/752
+I (2627) wifi:Init max length of beacon: 752/752
+[0;32mI (2637) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (2667) wifi:ap channel adjust o:1,1 n:6,2
+I (2667) wifi:new:<6,0>, old:<1,1>, ap:<6,2>, sta:<6,0>, prof:1
+I (2667) wifi:state: init -> auth (b0)
+I (2697) wifi:state: auth -> assoc (0)
+I (3697) wifi:state: assoc -> init (2700)
+I (3707) wifi:new:<6,0>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1
+[0;32mI (3707) WIFI: retry to connect to the AP[0m
+[0;32mI (3707) WIFI: connect to the AP fail[0m
+I (3727) wifi:new:<6,2>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1
+I (3737) wifi:state: init -> auth (b0)
+I (3757) wifi:state: auth -> assoc (0)
+I (4757) wifi:state: assoc -> init (2700)
+I (4757) wifi:new:<6,0>, old:<6,2>, ap:<6,2>, sta:<6,0>, prof:1
+[0;32mI (4767) WIFI: retry to connect to the AP[0m
+[0;32mI (4767) WIFI: connect to the AP fail[0m
+I (4787) wifi:new:<6,2>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1
+I (4787) wifi:state: init -> auth (b0)
+I (4807) wifi:state: auth -> assoc (0)
+I (4817) wifi:state: assoc -> run (10)
+I (4847) wifi:connected with Cloud Coffee 2, aid = 2, channel 6, BW20, bssid = 02:b8:e6:c3:26:02
+I (4847) wifi:security: WPA2-PSK, phy: bgn, rssi: -70
+I (4857) wifi:pm start, type: 1
+
+I (4857) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4897) wifi:<ba-add>idx:0 (ifx:0, 02:b8:e6:c3:26:02), tid:0, ssn:0, winSize:64
+I (5027) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5867) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (5867) WIFI: got ip:192.168.61.51[0m
+[0;32mI (5867) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (5877) WIFI: Connected to WiFi network[0m
+[0;32mI (5877) WIFI: Hosting at 192.168.4.1 now![0m
+[0;32mI (8257) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (13547) WIFI: Response: {"scope":"https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks","access_token":"A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":30530,"nonce":"2024-07-01T07:01:23ZBl_vQkWCEVDjSRjQy0OESRUQNujJS1u6_F9TTuvKaFc"}[0m
+[0;32mI (13627) WIFI: Token: A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg[0m
+[0;32mI (13637) main_task: Returned from app_main()[0m
+[0;32mI (16487) PNGTest: elapsed time[ms]:2850[0m
+[0;32mI (22527) DEVICE: Button 1 pressed[0m
+[0;32mI (22527) DEVICE: select product[0m
+[0;32mI (24997) DEVICE: Button 3 pressed[0m
+[0;32mI (24997) DEVICE: product index: 0[0m
+[0;32mI (26657) DEVICE: Button 1 pressed[0m
+[0;32mI (26657) DEVICE: choose quantity[0m
+[0;32mI (28667) DEVICE: Button 2 pressed[0m
+[0;32mI (28667) DEVICE: quantity: 0[0m
+[0;32mI (29887) DEVICE: Button 1 pressed[0m
+[0;32mI (29887) DEVICE: confirm quantity[0m
+[0;32mI (32227) DEVICE: Button 1 pressed[0m
+[0;32mI (32227) DEVICE: confirm cart[0m
+[0;32mI (33637) DEVICE: Button 1 pressed[0m
+[0;32mI (33637) DEVICE: pay now[0m
+[0;32mI (33687) DEVICE: send request to server and wait for QR code[0m
+[0;32mI (33687) WIFI: Post data: {"merchant_info": {"business_name": "Vuu Vinh Tu"},"items": [{"name": "Crab", "quantity": 1, "unit_price": {"currency": "USD", "value": "1000"}}]}[0m
+[0;32mI (33977) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (35787) WIFI: Response: {"id":"INV2-96US-FKX7-V4S9-R8SY","number":"0078","template_id":"TEMP-4031842112225572W","status":"DRAFT","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Crab","quantity":1.0,"unit_price":{"currency":"USD","value":"1000.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1000.00"},"metadata":{"created_date":"2024-07-01 00:32:57 PDT"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY","method":"GET"},{"rel":"send","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/send","method":"POST"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/update","method":"PUT"},{"rel":"delete","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY","method":"DELETE"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/record-payment","method":"POST"}]}[0m
+[0;32mI (35867) WIFI: Invoice ID: INV2-96US-FKX7-V4S9-R8SY[0m
+[0;32mI (36297) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (38347) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/qr-code[0m
+[0;32mI (38347) WIFI: Post data: {"width": 200, "height": 200}[0m
+[0;32mI (38537) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (40387) WIFI: Response: {"image":"iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQAAAADjreInAAADB0lEQVR42u3cQXLqMAyAYTMsWHIEjpKjwdE4CkfIkkUHvdiWbCUktK+dib34sykk+dKN8ciSnCB/OsaAx+PxeDwej8fj/9N/BTsu8eRB7ieJ367Tt3v8cPRn03HC4/vx1zyew2X6ON0pz5DPvsIgig75hnzjHY/vyY9pTLvL+acQwjA96jFdPJd/EB+Fx3fp6+XHUW7nPH+np76WN+Dx3XlJyGZqG//H9BGP79XX+COc00iPk/a1TuW3H8cvePzuvqz/cvx8P8nGx+/Wj3j87n523Kargz31EOOPEoqcfpK/w+N39l82ptOfc0papEVf9nn+Tkd+VL4Bj+/Fx0xbvCw6U+c7Rdz6bzb+3+MXPL6hH0M9Uv641D/qoi+eraEIHt+ND3VO1kGfzy7rd5vzPx7f0FulTjMVVn8eddDX+COrlfozHt/Qa9H5kUf6fFYvCbrncimIx3fgxVCcqW+aP5ZS6bC4ZLD4YyX/hse39Lr+S0WPMpXHs4Mb9Jq/sAQdHt+Jt6DjUvPH2vRjobTPKr+Pfzy+na/hhT1KF3357LJ/+LxRv8bjm3ntFM4ztWbarCri+ye2xj8e38pLCS/q+M/1uxJpaFebtbK9xR94fDOvTWtaac7Ts9t/VH4gs1ZMPL4TLz7ppjs1XCkkp5IL+pB/w+PbeLd/Tlz/8KwqUqKSw1b/Gx7fxKea8tO3p+X5W1vZSivQrECCx/fiQ61/WP7NLQXFqiKLqRyP78Br0PGef9P9c9o0MdT9R2/973h8Q6/Lu1nTT60/a9Kt3LCRv8PjW3ltevf9l6X+bKUQ7b/Urfh4fD9eO919pe64mKrtWP/94PGtvDvKVnyPfNNa+V94fCd+vv9elu+PsKxGsK34n/fv4/F7+6vlj+tKL6z5xQ8Ej+/D19dLXcfg99+LiNt/VBaIeHyv/lCKzvJae6vP6voRj+/CB1f0qJuO/K788fP7L/H43b3rn6ipOOv0saLzswTYg+Dx/fjZ+k/8/nvXf/lh/z0e387/+sDj8Xg8Ho/H4/E7+n8R+RJ9vViH+gAAAABJRU5ErkJggg=="}[0m
+[0;32mI (40477) WIFI: Image: iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQAAAADjreInAAADB0lEQVR42u3cQXLqMAyAYTMsWHIEjpKjwdE4CkfIkkUHvdiWbCUktK+dib34sykk+dKN8ciSnCB/OsaAx+PxeDwej8fj/9N/BTsu8eRB7ieJ367Tt3v8cPRn03HC4/vx1zyew2X6ON0pz5DPvsIgig75hnzjHY/vyY9pTLvL+acQwjA96jFdPJd/EB+Fx3fp6+XHUW7nPH+np76WN+Dx3XlJyGZqG//H9BGP79XX+COc00iPk/a1TuW3H8cvePzuvqz/cvx8P8nGx+/Wj3j87n523Kargz31EOOPEoqcfpK/w+N39l82ptOfc0papEVf9nn+Tkd+VL4Bj+/Fx0xbvCw6U+c7Rdz6bzb+3+MXPL6hH0M9Uv641D/qoi+eraEIHt+ND3VO1kGfzy7rd5vzPx7f0FulTjMVVn8eddDX+COrlfozHt/Qa9H5kUf6fFYvCbrncimIx3fgxVCcqW+aP5ZS6bC4ZLD4YyX/hse39Lr+S0WPMpXHs4Mb9Jq/sAQdHt+Jt6DjUvPH2vRjobTPKr+Pfzy+na/hhT1KF3357LJ/+LxRv8bjm3ntFM4ztWbarCri+ye2xj8e38pLCS/q+M/1uxJpaFebtbK9xR94fDOvTWtaac7Ts9t/VH4gs1ZMPL4TLz7ppjs1XCkkp5IL+pB/w+PbeLd/Tlz/8KwqUqKSw1b/Gx7fxKea8tO3p+X5W1vZSivQrECCx/fiQ61/WP7NLQXFqiKLqRyP78Br0PGef9P9c9o0MdT9R2/973h8Q6/Lu1nTT60/a9Kt3LCRv8PjW3ltevf9l6X+bKUQ7b/Urfh4fD9eO919pe64mKrtWP/94PGtvDvKVnyPfNNa+V94fCd+vv9elu+PsKxGsK34n/fv4/F7+6vlj+tKL6z5xQ8Ej+/D19dLXcfg99+LiNt/VBaIeHyv/lCKzvJae6vP6voRj+/CB1f0qJuO/K788fP7L/H43b3rn6ipOOv0saLzswTYg+Dx/fjZ+k/8/nvXf/lh/z0e387/+sDj8Xg8Ho/H4/E7+n8R+RJ9vViH+gAAAABJRU5ErkJggg==[0m
+[0;32mI (40487) DEVICE: Base64 decoded image size: 832[0m
+[0;32mI (40577) DEVICE: Base64 decoded image: �PNG
+
+[0m
+[0;32mI (40627) DEVICE: display QR code[0m
+[0;32mI (40677) DEVICE: display QR code[0m
+[0;32mI (40727) DEVICE: display QR code[0m
+[0;32mI (40777) DEVICE: display QR code[0m
+[0;32mI (40827) DEVICE: display QR code[0m
+[0;32mI (40877) DEVICE: display QR code[0m
+[0;32mI (40927) DEVICE: display QR code[0m
+[0;32mI (40977) DEVICE: display QR code[0m
+[0;32mI (41027) DEVICE: display QR code[0m
+[0;32mI (41077) DEVICE: display QR code[0m
+[0;32mI (41127) DEVICE: display QR code[0m
+[0;32mI (41177) DEVICE: display QR code[0m
+[0;32mI (41227) DEVICE: display QR code[0m
+[0;32mI (41277) DEVICE: display QR code[0m
+[0;32mI (41327) DEVICE: display QR code[0m
+[0;32mI (41377) DEVICE: display QR code[0m
+[0;32mI (41427) DEVICE: display QR code[0m
+[0;32mI (41477) DEVICE: display QR code[0m
+[0;32mI (41527) DEVICE: display QR code[0m
+[0;32mI (41577) DEVICE: display QR code[0m
+[0;32mI (41627) DEVICE: display QR code[0m
+[0;32mI (41677) DEVICE: display QR code[0m
+[0;32mI (41727) DEVICE: display QR code[0m
+[0;32mI (41777) DEVICE: display QR code[0m
+[0;32mI (41827) DEVICE: display QR code[0m
+[0;32mI (41877) DEVICE: display QR code[0m
+[0;32mI (41927) DEVICE: display QR code[0m
+[0;32mI (41977) DEVICE: display QR code[0m
+[0;32mI (42027) DEVICE: display QR code[0m
+[0;32mI (42077) DEVICE: display QR code[0m
+[0;32mI (42127) DEVICE: display QR code[0m
+[0;32mI (42177) DEVICE: display QR code[0m
+[0;32mI (42227) DEVICE: display QR code[0m
+[0;32mI (42277) DEVICE: display QR code[0m
+[0;32mI (42327) DEVICE: display QR code[0m
+[0;32mI (42377) DEVICE: display QR code[0m
+[0;32mI (42427) DEVICE: display QR code[0m
+[0;32mI (42477) DEVICE: display QR code[0m
+[0;32mI (42527) DEVICE: display QR code[0m
+[0;32mI (42577) DEVICE: display QR code[0m
+[0;32mI (42627) DEVICE: display QR code[0m
+[0;32mI (42677) DEVICE: display QR code[0m
+[0;32mI (42727) DEVICE: display QR code[0m
+[0;32mI (42777) DEVICE: display QR code[0m
+[0;32mI (42827) DEVICE: display QR code[0m
+[0;32mI (42877) DEVICE: display QR code[0m
+[0;32mI (42927) DEVICE: display QR code[0m
+[0;32mI (42977) DEVICE: display QR code[0m
+[0;32mI (43027) DEVICE: display QR code[0m
+[0;32mI (43077) DEVICE: display QR code[0m
+[0;32mI (43127) DEVICE: display QR code[0m
+[0;32mI (43177) DEVICE: display QR code[0m
+[0;32mI (43227) DEVICE: display QR code[0m
+[0;32mI (43277) DEVICE: display QR code[0m
+[0;32mI (43327) DEVICE: display QR code[0m
+[0;32mI (43377) DEVICE: display QR code[0m
+[0;32mI (43427) DEVICE: display QR code[0m
+[0;32mI (43477) DEVICE: display QR code[0m
+[0;32mI (43527) DEVICE: display QR code[0m
+[0;32mI (43577) DEVICE: display QR code[0m
+[0;32mI (43627) DEVICE: display QR code[0m
+[0;32mI (43677) DEVICE: display QR code[0m
+[0;32mI (43727) DEVICE: display QR code[0m
+[0;32mI (43777) DEVICE: display QR code[0m
+[0;32mI (43827) DEVICE: display QR code[0m
+[0;32mI (43857) PNGTest: elapsed time[ms]:3250[0m
+[0;32mI (43857) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY[0m
+[0;32mI (43877) DEVICE: display QR code[0m
+[0;32mI (43927) DEVICE: display QR code[0m
+[0;32mI (43977) DEVICE: display QR code[0m
+[0;32mI (44017) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (44027) DEVICE: display QR code[0m
+[0;32mI (44077) DEVICE: display QR code[0m
+[0;32mI (44127) DEVICE: display QR code[0m
+[0;32mI (44177) DEVICE: display QR code[0m
+[0;32mI (44227) DEVICE: display QR code[0m
+[0;32mI (44277) DEVICE: display QR code[0m
+[0;32mI (44327) DEVICE: display QR code[0m
+[0;32mI (44377) DEVICE: display QR code[0m
+[0;32mI (44427) DEVICE: display QR code[0m
+[0;32mI (44477) DEVICE: display QR code[0m
+[0;32mI (44527) DEVICE: display QR code[0m
+[0;32mI (44577) DEVICE: display QR code[0m
+[0;32mI (44577) DEVICE: Button 2 pressed[0m
+[0;32mI (44577) DEVICE: cancel payment[0m
+[0;32mI (44627) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/cancel[0m
+[0;32mI (44627) WIFI: Post data: {}[0m
+[0;32mI (44817) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (45367) WIFI: Response: {"id":"INV2-96US-FKX7-V4S9-R8SY","number":"0078","template_id":"TEMP-4031842112225572W","status":"UNPAID","merchant_info":{"business_name":"Vuu Vinh Tu"},"items":[{"name":"Crab","quantity":1.0,"unit_price":{"currency":"USD","value":"1000.00"}}],"invoice_date":"2024-07-01 PDT","tax_calculated_after_discount":false,"tax_inclusive":false,"total_amount":{"currency":"USD","value":"1000.00"},"metadata":{"created_date":"2024-07-01 00:32:57 PDT","payer_view_url":"https://www.sandbox.paypal.com/invoice/p/#INV2-96US-FKX7-V4S9-R8SY"},"allow_tip":false,"links":[{"rel":"self","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY","method":"GET"},{"rel":"replace","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/update","method":"PUT"},{"rel":"cancel","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/cancel","method":"POST"},{"rel":"remind","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/remind","method":"POST"},{"rel":"record-payment","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/record-payment","method":"POST"},{"rel":"qr-code","href":"https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY/qr-code","method":"GET"}]}[0m
+[0;32mI (45467) WIFI: Status: UNPAID[0m
+[0;32mI (46477) WIFI: URL: https://api-m.sandbox.paypal.com/v1/invoicing/invoices/INV2-96US-FKX7-V4S9-R8SY[0m
+[0;32mI (46677) esp-x509-crt-bundle: Certificate validated[0m
+[0;31mE (46997) pngle_new: Error allocating memory for line 178[0m
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d9b2b  PS      : 0x00060f30  A0      : 0x800d8429  A1      : 0x3ffda1c0  
+A2      : 0x00000000  A3      : 0x3ffda1e0  A4      : 0x00000400  A5      : 0x3ffaec14  
+A6      : 0x3fffb630  A7      : 0x3ffaec14  A8      : 0x801657a8  A9      : 0x3ffda180  
+A10     : 0x00000400  A11     : 0x3ffda560  A12     : 0x3ffaec14  A13     : 0x00000080  
+A14     : 0x00000080  A15     : 0x3ffda730  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000024  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400d9b28:0x3ffda1c0 0x400d8426:0x3ffda1e0 0x400d875d:0x3ffda620 0x4008bb9d:0x3ffda640
+
+
+
+
+ELF file SHA256: 7306e4b15
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul  1 2024 01:48:00[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00110000[0m
+[0;32mI (90) boot:  3 storage          Unknown data     01 82 00120000 00210000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3dbf8h (252920) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=0004dc20 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ad904h (710916) map[0m
+[0;32mI (446) esp_image: segment 3: paddr=000fd92c vaddr=3ffb23f8 size=01a0ch (  6668) load[0m
+[0;32mI (448) esp_image: segment 4: paddr=000ff340 vaddr=40080000 size=19870h (104560) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (525) cpu_start: Pro cpu start user code[0m
+[0;32mI (525) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (525) cpu_start: Application information:[0m
+[0;32mI (528) cpu_start: Project name:     st7789[0m
+[0;32mI (533) cpu_start: App version:      1[0m
+[0;32mI (538) cpu_start: Compile time:     Jul  1 2024 01:47:40[0m
+[0;32mI (544) cpu_start: ELF file SHA256:  7306e4b15...[0m
+[0;32mI (549) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (554) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (559) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (563) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (568) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (575) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (581) heap_init: At 3FFB9EC0 len 00026140 (152 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (600) heap_init: At 40099870 len 00006790 (25 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (626) main_task: Started on CPU0[0m
+[0;32mI (636) main_task: Calling app_main()[0m
+[0;32mI (776) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (776) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (776) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (966) DEVICE: Partition size: total: 1980641, used: 113452[0m
+[0;32mI (966) ST7789: GPIO_CS=5[0m
+[0;32mI (966) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (976) ST7789: GPIO_DC=19[0m
+[0;32mI (976) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (986) ST7789: GPIO_RESET=17[0m
+[0;32mI (986) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1296) ST7789: GPIO_BL=-1[0m
+[0;32mI (1296) ST7789: GPIO_MOSI=23[0m
+[0;32mI (1296) ST7789: GPIO_SCLK=18[0m
+[0;32mI (2416) WIFI: Name: Milk[0m
+[0;32mI (2416) WIFI: Price: 1
+[0m
+[0;32mI (2416) WIFI: Name: Bread[0m
+[0;32mI (2416) WIFI: Price: 2
+[0m
+[0;32mI (2416) WIFI: Name: Eggs[0m
+[0;32mI (2426) WIFI: Price: 3
+[0m
+[0;32mI (2426) WIFI: Name: Cheese[0m
+[0;32mI (2426) WIFI: Price: 4
+[0m
+[0;32mI (2436) WIFI: Name: Crab[0m
+[0;32mI (2436) WIFI: Price: 1000[0m
+I (2456) wifi:wifi driver task: 3ffc3528, prio:23, stack:6656, core=0
+I (2476) wifi:wifi firmware version: cc1dd81
+I (2476) wifi:wifi certification version: v7.0
+I (2476) wifi:config NVS flash: enabled
+I (2476) wifi:config nano formating: disabled
+I (2476) wifi:Init data frame dynamic rx buffer num: 32
+I (2486) wifi:Init static rx mgmt buffer num: 5
+I (2486) wifi:Init management short buffer num: 32
+I (2496) wifi:Init dynamic tx buffer num: 32
+I (2496) wifi:Init static rx buffer size: 1600
+I (2496) wifi:Init static rx buffer num: 10
+I (2506) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2506) wifi_init: rx ba win: 6[0m
+[0;32mI (2516) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2516) wifi_init: udp mbox: 6[0m
+[0;32mI (2516) wifi_init: tcp mbox: 6[0m
+[0;32mI (2526) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2526) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2536) wifi_init: tcp mss: 1440[0m
+[0;32mI (2536) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2546) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (2626) wifi:mode : sta (24:d7:eb:18:3f:7c) + softAP (24:d7:eb:18:3f:7d)
+I (2626) wifi:enable tsf
+I (2626) wifi:Total power save buffer number: 16
+I (2626) wifi:Init max length of beacon: 752/752
+I (2626) wifi:Init max length of beacon: 752/752
+[0;32mI (2636) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (2656) wifi:ap channel adjust o:1,1 n:6,2
+I (2656) wifi:new:<6,0>, old:<1,1>, ap:<6,2>, sta:<6,0>, prof:1
+I (2656) wifi:state: init -> auth (b0)
+I (2676) wifi:state: auth -> assoc (0)
+I (2696) wifi:state: assoc -> run (10)
+I (2716) wifi:connected with Cloud Coffee 2, aid = 2, channel 6, BW20, bssid = 02:b8:e6:c3:26:02
+I (2716) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (2726) wifi:pm start, type: 1
+
+I (2726) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2776) wifi:<ba-add>idx:0 (ifx:0, 02:b8:e6:c3:26:02), tid:0, ssn:0, winSize:64
+I (2806) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3736) esp_netif_handlers: sta ip: 192.168.61.51, mask: 255.255.254.0, gw: 192.168.60.1[0m
+[0;32mI (3736) WIFI: got ip:192.168.61.51[0m
+[0;32mI (3736) WIFI: connected to ap SSID:Cloud Coffee 2 password:23456789[0m
+[0;32mI (3746) WIFI: Connected to WiFi network[0m
+[0;32mI (3746) WIFI: Hosting at 192.168.4.1 now![0m
+[0;32mI (8056) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (9626) WIFI: Response: {"scope":"https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks","access_token":"A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":30484,"nonce":"2024-07-01T07:01:23ZBl_vQkWCEVDjSRjQy0OESRUQNujJS1u6_F9TTuvKaFc"}[0m
+[0;32mI (9706) WIFI: Token: A21AAJiWXg3mBEXTt_4E2Q_BXjXKJDm3uZtingSsn8p5cdnDQWciOZMPBIxK9HRSf8o49dX1hwTz15qURY3LGe8XfUmg5NrWg[0m
+[0;32mI (9716) main_task: Returned from app_main()[0m
+[0;32mI (12566) PNGTest: elapsed time[ms]:2850[0m

@@ -1,0 +1,43 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008ffc8: remove_free_block at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/tlsf/tlsf.c:333
+ (inlined by) block_locate_free at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/tlsf/tlsf.c:1005
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4008ffc5: remove_free_block at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/tlsf/tlsf.c:331 (discriminator 1)
+ (inlined by) block_locate_free at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+0x4008f961: multi_heap_malloc_impl at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/multi_heap.c:210
+0x40082081: heap_caps_malloc_base at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/heap_caps.c:179
+0x400820dc: heap_caps_malloc at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/heap_caps.c:202
+0x40082111: heap_caps_malloc_default at C:/Users/xiaoy/esp/v5.2/esp-idf/components/heap/heap_caps.c:228
+0x40092659: malloc at C:/Users/xiaoy/esp/v5.2/esp-idf/components/newlib/heap.c:24
+0x40085a09: wifi_malloc at C:/Users/xiaoy/esp/v5.2/esp-idf/components/esp_wifi/esp32/esp_adapter.c:74
+0x401759cd: esf_buf_alloc_dynamic at ??:?
+0x400955b1: esf_buf_alloc at ??:?
+0x40096554: wDev_IndicateFrame at ??:?
+0x40096a63: wDev_ProcessRxSucData at ??:?
+0x40096b17: wdevProcessRxSucDataAll at ??:?
+0x40093fe2: ppTask at ??:?
+0x4008a77d: vPortTaskWrapper at C:/Users/xiaoy/esp/v5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Users\xiaoy\esp\v5.2\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt
