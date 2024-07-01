@@ -1,26 +1,0 @@
-[1/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
-D:/htn0d/esp-idf-st7789-master/main/main.c:264:1: warning: ignoring attribute 'section (".iram1.1")' because it conflicts with previous 'section (".iram1.0")' [-Wattributes]
-  264 | {
-      | ^
-D:/htn0d/esp-idf-st7789-master/main/main.c:76:23: note: previous declaration here
-   76 | static void IRAM_ATTR button_isr_handler(void *args);
-      |                       ^~~~~~~~~~~~~~~~~~
-[2/11] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/spiffs/spiffsgen.py 0xf0000 D:/htn0d/esp-idf-st7789-master/font D:/htn0d/esp-idf-st7789-master/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
-[3/11] Linking C static library esp-idf\main\libmain.a
-[4/11] Performing build step for 'bootloader'
-[1/1] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\bootloader\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/htn0d/esp-idf-st7789-master/build/bootloader/bootloader.bin"
-Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
-[5/9] Generating ld/sections.ld
-[6/9] Linking CXX executable st7789.elf
-[7/9] Generating binary image from built executable
-esptool.py v4.7.0
-Creating esp32 image...
-Merged 2 ELF sections
-Successfully created esp32 image.
-Generated D:/htn0d/esp-idf-st7789-master/build/st7789.bin
-[8/9] cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/htn0d/esp-idf-st7789-master/build/partition_table/partition-table.bin D:/htn0d/esp-idf-st7789-master/build/st7789.bin"
-FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size D:/htn0d/esp-idf-st7789-master/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
-cmd.exe /C "cd /D D:\htn0d\esp-idf-st7789-master\build\esp-idf\esptool_py && C:\Users\xiaoy\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/xiaoy/esp/v5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/htn0d/esp-idf-st7789-master/build/partition_table/partition-table.bin D:/htn0d/esp-idf-st7789-master/build/st7789.bin"
-Error: app partition is too small for binary st7789.bin size 0x1037a0:
-  - Part 'factory' 0/0 @ 0x10000 size 0x100000 (overflow 0x37a0)
-ninja: build stopped: subcommand failed.
