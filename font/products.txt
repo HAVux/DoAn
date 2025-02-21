@@ -2,4 +2,4 @@ Milk;1
 Bread;2
 Eggs;3
 Cheese;4
-Crab;1000
+Crab;10
